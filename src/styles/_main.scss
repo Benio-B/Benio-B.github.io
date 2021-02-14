@@ -1,0 +1,21 @@
+@import '_variables.scss';
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk';
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $primary_color_text;
+}
+
+.text-danger {
+    color: red;
+    font-size: small;
+}
+
+.main-page {
+    text-align: center;
+}

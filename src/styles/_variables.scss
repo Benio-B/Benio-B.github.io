@@ -1,0 +1,21 @@
+$primary_color: #f8f9fa;
+$second_color: #adb5bd;
+$banner_item_selected_color: #e9ecef;
+$banner_item_color: #6c757d;
+$banner_color: #343a40;
+$primary_color_text: #212529;
+
+$margin-very-little: 10px;
+$margin-little: 13px;
+$margin-medium: 20px;
+$margin-big-medium: 30px;
+$margin-big: 50px;
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('~@/styles/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('~@/styles/fonts/SpaceGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
