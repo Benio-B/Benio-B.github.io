@@ -1,4 +1,5 @@
 <template>
+    <burger-menu />
     <div class="main-page">
         <font-awesome-icon icon="bars" />
         Good morning here!
@@ -6,8 +7,14 @@
 </template>
 
 <script lang="ts">
-    import { Vue } from 'vue-class-component';
+    import { Options, Vue } from 'vue-class-component';
+    import BurgerMenu from './components/Menu/BurgerMenu.vue';
 
+    @Options({
+        components: {
+            BurgerMenu,
+        },
+    })
     export default class App extends Vue {}
 </script>
 

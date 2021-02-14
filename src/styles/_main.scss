@@ -1,7 +1,8 @@
 @import '_variables.scss';
+@import '_menu.scss';
 
 body {
-    margin: 0;
+    margin: $margin-medium;
     font-family: 'Space Grotesk';
 }
 
