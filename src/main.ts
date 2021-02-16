@@ -10,6 +10,7 @@ import {
     faUser,
     faBeer,
     faTimes,
+    faAddressCard,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faBars);
@@ -17,6 +18,7 @@ library.add(faIgloo);
 library.add(faUser);
 library.add(faBeer);
 library.add(faTimes);
+library.add(faAddressCard);
 
 createApp(App)
     .use(store)

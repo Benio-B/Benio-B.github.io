@@ -1,6 +1,6 @@
 <template>
-    <div class="burger-menu-item-container">
-        <font-awesome-icon v-bind:icon="item.iconName" />
+    <div class="menu-item-container">
+        <font-awesome-icon v-bind:icon="item.iconName" class="menu-item-icon" />
         {{ item.name }}
     </div>
 </template>

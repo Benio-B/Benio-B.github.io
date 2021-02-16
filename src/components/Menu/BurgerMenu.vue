@@ -48,12 +48,16 @@
                 iconName: 'igloo',
             },
             {
-                name: 'CV',
+                name: 'Curriculum Vitae',
                 iconName: 'user',
             },
             {
                 name: 'Projets',
                 iconName: 'beer',
+            },
+            {
+                name: 'Contact',
+                iconName: 'address-card',
             },
         ];
 
