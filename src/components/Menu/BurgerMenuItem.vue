@@ -1,7 +1,16 @@
 <template>
     <div class="menu-item-container">
-        <font-awesome-icon v-bind:icon="item.iconName" class="menu-item-icon" />
-        {{ item.name }}
+        <router-link
+            v-bind:to="item.path"
+            class="menu-item-link"
+            v-on:click.capture="$emit('on-click-item')"
+        >
+            <font-awesome-icon
+                v-bind:icon="item.iconName"
+                class="menu-item-icon"
+            />
+            {{ item.name }}
+        </router-link>
     </div>
 </template>
 

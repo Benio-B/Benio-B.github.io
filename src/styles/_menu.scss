@@ -140,6 +140,11 @@
   width: 100%;
 }
 
+.menu-item-link {
+  color: white;
+  text-decoration: none;
+}
+
 @keyframes keyframe-show-menu {
   0% {
     opacity: 0;

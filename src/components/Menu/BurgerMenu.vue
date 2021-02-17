@@ -20,7 +20,10 @@
             <div class="list-menu-items">
                 <ul>
                     <li v-for="item in items" :key="item.name">
-                        <burger-menu-item v-bind:item="item" />
+                        <burger-menu-item
+                            v-bind:item="item"
+                            v-on:on-click-item="onClickItem"
+                        />
                     </li>
                 </ul>
             </div>
@@ -46,23 +49,26 @@
             {
                 name: 'Home',
                 iconName: 'igloo',
+                path: '/',
             },
             {
                 name: 'Curriculum Vitae',
                 iconName: 'user',
+                path: '/cv',
             },
             {
                 name: 'Projets',
                 iconName: 'beer',
+                path: '/projects',
             },
             {
                 name: 'Contact',
                 iconName: 'address-card',
+                path: '/contact',
             },
         ];
 
         private showListMenuItems = false;
-        private menuAlreadyClicked = false;
 
         mounted(): void {
             const menuBurgerItemIcon = this.$refs.menuBurgerIcon;
@@ -73,7 +79,6 @@
 
             menuBurgerItemIcon.addEventListener('click', () => {
                 this.showListMenuItems = true;
-                this.menuAlreadyClicked = true;
             });
 
             const closeMenuItemsIcon = this.$refs.closeMenuItemsIcon;
@@ -84,8 +89,11 @@
 
             closeMenuItemsIcon.addEventListener('click', () => {
                 this.showListMenuItems = false;
-                this.menuAlreadyClicked = true;
             });
+        }
+
+        onClickItem(): void {
+            this.showListMenuItems = false;
         }
     }
 </script>

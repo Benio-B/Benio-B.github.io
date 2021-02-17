@@ -1,9 +1,6 @@
 <template>
     <burger-menu />
-    <div class="main-page">
-        <font-awesome-icon icon="bars" />
-        Good morning here!
-    </div>
+    <router-view></router-view>
 </template>
 
 <script lang="ts">
