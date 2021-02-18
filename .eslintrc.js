@@ -19,15 +19,4 @@ module.exports = {
         'lines-between-class-members':
             process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     },
-    overrides: [
-        {
-            files: [
-                '**/__tests__/*.{j,t}s?(x)',
-                '**/tests/unit/**/*.spec.{j,t}s?(x)',
-            ],
-            env: {
-                jest: true,
-            },
-        },
-    ],
 };
