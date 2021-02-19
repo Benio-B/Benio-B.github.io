@@ -12,7 +12,6 @@
             ref="menuBurgerIcon"
             class="corner-menu-container-animated"
         >
-            <div class="corner-menu-items-container" />
             <div class="corner-menu-icon">
                 <font-awesome-icon
                     icon="bars"
@@ -21,7 +20,7 @@
                 />
             </div>
         </div>
-        <div v-show="showListMenuItems">
+        <div v-show="showListMenuItems" class="list-menu-items-container">
             <div class="list-menu-items">
                 <ul>
                     <li
