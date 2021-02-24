@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "experiences": "Expériences",
+    "projects": "Projets",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "title": {
+    "home": "Bienvenue ici !"
+  }
+}

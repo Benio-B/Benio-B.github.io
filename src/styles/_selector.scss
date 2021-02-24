@@ -1,0 +1,95 @@
+.selector-language-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: $margin-little;
+}
+
+$transition: cubic-bezier(0.86, 0, 0.07, 1);
+
+$can-toggle-offset: 2px;
+
+.selector-language-label {
+    .selector-language-switch {
+        transition: background-color 0.3s $transition;
+        background: $menu_item_color;
+        height: $selector_height;
+        border-radius: $selector_height;
+        width: $selector_width;
+
+        &:before {
+            color: $selector_item_not_selected;
+            font-weight: 900;
+            left: $selector_switch_width;
+            font-size: $selector_font_size;
+            line-height: $selector_height;
+            width: $selector_switch_width;
+        }
+
+        &:after {
+            -webkit-transition: -webkit-transform 0.3s $transition;
+            transition: transform 0.3s $transition;
+            color: $selector_item_selected;
+            top: $can-toggle-offset;
+            left: $can-toggle-offset;
+            border-radius: $selector_height;
+            width: $selector_switch_width - $can-toggle-offset;
+            line-height: $selector_height - ($can-toggle-offset * 2);
+            font-size: $selector_font_size;
+        }
+    }
+}
+
+.can-toggle {
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    .selector-language-checkbox {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &:checked ~ .selector-language-label .selector-language-switch {
+            &:before {
+                content: attr(data-unchecked);
+                left: 0;
+            }
+
+            &:after {
+                transform: translate3d(
+                    $selector_width -
+                        ($selector_switch_width + $can-toggle-offset),
+                    0,
+                    0
+                );
+                content: attr(data-checked);
+            }
+        }
+    }
+
+    .selector-language-label .selector-language-switch {
+        position: relative;
+
+        &:before {
+            content: attr(data-checked);
+            position: absolute;
+            top: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &:after {
+            content: attr(data-unchecked);
+            position: absolute;
+            z-index: 5;
+            text-transform: uppercase;
+            text-align: center;
+            background: white;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}

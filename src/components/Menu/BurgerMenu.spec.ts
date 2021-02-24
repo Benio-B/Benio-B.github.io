@@ -1,10 +1,17 @@
-import { shallowMount } from '@vue/test-utils';
+import { MountingOptions, shallowMount } from '@vue/test-utils';
 import BurgerMenu from './BurgerMenu.vue';
 import BurgerMenuItem from './BurgerMenuItem.vue';
 
 describe('BurgerMenu', () => {
+    const $t = jest.fn();
     it('When BurgerMenu is created, Then showListMenuItems is false and user can open/close menu', async () => {
-        const wrapper = shallowMount(BurgerMenu, {});
+        const wrapper = shallowMount(BurgerMenu, {
+            global: {
+                mocks: {
+                    $t,
+                },
+            },
+        } as MountingOptions<{}>);
 
         expect(
             wrapper.find('[data-test=menu-container]').exists()
@@ -44,7 +51,13 @@ describe('BurgerMenu', () => {
     });
 
     it("When BurgerMenuItem emits 'onClickItem', Then menu is closed", async () => {
-        const wrapper = shallowMount(BurgerMenu, {});
+        const wrapper = shallowMount(BurgerMenu, {
+            global: {
+                mocks: {
+                    $t,
+                },
+            },
+        } as MountingOptions<{}>);
         wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
@@ -73,7 +86,13 @@ describe('BurgerMenu', () => {
     });
 
     it('When menu is opened, Then list of items is displayed', async () => {
-        const wrapper = shallowMount(BurgerMenu, {});
+        const wrapper = shallowMount(BurgerMenu, {
+            global: {
+                mocks: {
+                    $t,
+                },
+            },
+        } as MountingOptions<{}>);
         wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 

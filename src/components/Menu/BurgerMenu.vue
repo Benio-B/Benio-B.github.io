@@ -59,32 +59,40 @@
         },
     })
     export default class BurgerMenu extends Vue {
-        private items: Item[] = [
-            {
-                name: 'Home',
-                id: 'home',
-                iconName: 'igloo',
-                path: '/',
-            },
-            {
-                name: 'Curriculum Vitae',
-                id: 'cv',
-                iconName: 'user',
-                path: '/cv',
-            },
-            {
-                name: 'Projets',
-                id: 'projects',
-                iconName: 'beer',
-                path: '/projects',
-            },
-            {
-                name: 'Contact',
-                id: 'contact',
-                iconName: 'address-card',
-                path: '/contact',
-            },
-        ];
+        get items(): Item[] {
+            return [
+                {
+                    name: this.$t('menu.home'),
+                    id: 'home',
+                    iconName: 'igloo',
+                    path: '/',
+                },
+                {
+                    name: this.$t('menu.experiences'),
+                    id: 'cv',
+                    iconName: 'user',
+                    path: '/experiences',
+                },
+                {
+                    name: this.$t('menu.education'),
+                    id: 'cv',
+                    iconName: 'graduation-cap',
+                    path: '/education',
+                },
+                {
+                    name: this.$t('menu.projects'),
+                    id: 'projects',
+                    iconName: 'beer',
+                    path: '/projects',
+                },
+                {
+                    name: this.$t('menu.contact'),
+                    id: 'contact',
+                    iconName: 'address-card',
+                    path: '/contact',
+                },
+            ];
+        }
 
         private showListMenuItems = false;
 

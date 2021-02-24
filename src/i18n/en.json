@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "home": "Home",
+    "experiences": "Experiences",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "title": {
+    "home": "Hello there!"
+  }
+}

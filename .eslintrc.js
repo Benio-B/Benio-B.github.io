@@ -18,5 +18,14 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'lines-between-class-members':
             process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
     },
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx', '*.vue'],
+            rules: {
+                '@typescript-eslint/explicit-function-return-type': ['error'],
+            },
+        },
+    ],
 };
