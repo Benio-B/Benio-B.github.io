@@ -1,5 +1,5 @@
-@import 'home';
 @import 'variables';
+@import 'home';
 @import 'menu';
 @import 'selector';
 
@@ -16,11 +16,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $primary_color_text;
-}
-
-.text-danger {
-    color: red;
-    font-size: small;
 }
 
 .main-page {

@@ -12,7 +12,7 @@ $can-toggle-offset: 2px;
 .selector-language-label {
     .selector-language-switch {
         transition: background-color 0.3s $transition;
-        background: $menu_item_color;
+        background: $menu_background_color;
         height: $selector_height;
         border-radius: $selector_height;
         width: $selector_width;

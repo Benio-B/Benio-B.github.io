@@ -7,7 +7,7 @@
     will-change: height;
     will-change: width;
     transition-duration: 1s;
-    background: black;
+    background: $menu_background_color;
 }
 
 .temp.temp-is-closed:hover {
@@ -45,7 +45,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    color: white;
+    color: $menu_item_color;
 }
 
 .menu-is-opened .corner-menu-icon {
@@ -63,7 +63,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: black;
+    background-color: $menu_background_color;
     position: absolute;
 }
 
@@ -100,7 +100,7 @@
     ul li {
         list-style: none;
 
-        color: #fff;
+        color: $menu_item_color;
         cursor: pointer;
         font-size: 19px;
         font-weight: 400;
@@ -134,7 +134,7 @@
     top: 0;
     animation: keyframe-show-menu 1s both;
     animation-iteration-count: 1;
-    color: white;
+    color: $menu_item_color;
 }
 
 .menu-item-container:hover,
@@ -144,7 +144,7 @@
 
 .menu-item-container:after,
 .menu-item-container:before {
-    border: 1px solid rgba(#fff, 0);
+    border: 1px solid rgba($menu-item-color, 0);
     content: ' ';
     display: block;
     margin: 0 auto;
@@ -154,7 +154,7 @@
 
 .menu-item-container:hover:after,
 .menu-item-container:hover:before {
-    border-color: #fff;
+    border-color: $menu_item_color;
     transition: width 350ms ease;
     width: 100%;
 }
@@ -166,7 +166,7 @@
 }
 
 .menu-item-link {
-    color: white;
+    color: $menu_item_color;
     text-decoration: none;
 }
 

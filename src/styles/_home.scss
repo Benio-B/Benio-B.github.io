@@ -3,30 +3,28 @@
 }
 
 .home-presentation-title-container {
-    margin: 50px;
+    margin: $margin-big;
     text-align: center;
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: $font-weight-title;
+    font-size: $font-size-title;
 }
 
 .home-presentation-title-company-name {
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    padding: 5px 0 0 0;
+    padding: $margin-ants 0 0 0;
     position: relative;
+
     &:before,
     &:after {
         bottom: 3px;
         opacity: 1;
-        margin: 10px 0 0 0;
         content: '';
         position: absolute;
         width: 0px;
         height: 5px;
-        transition: all 0.2s ease-in-out;
-        transition-duration: 0.5s;
+        transition: all 0.5s ease-in-out;
         opacity: 0;
-        background-color: darken(orange, 5%);
+        background-color: $color-underline-text;
     }
 }
 
