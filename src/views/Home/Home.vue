@@ -22,7 +22,6 @@
         <div>
             {{ $t('home.presentation_final') }}
         </div>
-        {{ $t('title.home') }}
     </div>
 </template>
 

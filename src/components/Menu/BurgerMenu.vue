@@ -96,6 +96,10 @@
 
         private showListMenuItems = false;
 
+        noScroll(): void {
+            window.scrollTo(0, 0);
+        }
+
         mounted(): void {
             const menuBurgerItemIcon = this.$refs.menuBurgerIcon;
 
@@ -105,6 +109,8 @@
 
             menuBurgerItemIcon.addEventListener('click', () => {
                 this.showListMenuItems = true;
+
+                window.addEventListener('scroll', this.noScroll);
             });
 
             const closeMenuItemsIcon = this.$refs.closeMenuItemsIcon;
@@ -115,11 +121,15 @@
 
             closeMenuItemsIcon.addEventListener('click', () => {
                 this.showListMenuItems = false;
+
+                window.removeEventListener('scroll', this.noScroll);
             });
         }
 
         onClickItem(): void {
             this.showListMenuItems = false;
+
+            window.removeEventListener('scroll', this.noScroll);
         }
     }
 </script>

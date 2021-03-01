@@ -1,5 +1,6 @@
 .title-view {
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .home-presentation-title-container {
@@ -7,6 +8,7 @@
     text-align: center;
     font-weight: $font-weight-title;
     font-size: $font-size-title;
+    margin: $margin-mastodonte $margin-medium $margin-big $margin-medium;
 }
 
 .home-presentation-title-company-name {
