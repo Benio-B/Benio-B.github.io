@@ -8,7 +8,7 @@
                 @change="updateLanguage($event)"
                 v-bind:checked="
                     getLocalesToDisplay()[0].toLowerCase() ===
-                        $i18n.locale.toLowerCase()
+                    $i18n.locale.toLowerCase()
                 "
             />
             <label for="e" class="selector-language-label">
@@ -37,7 +37,7 @@
             }
 
             const newLanguage = Object.values(this.$i18n.availableLocales).find(
-                l => l !== this.$i18n.locale
+                (l) => l !== this.$i18n.locale
             );
             if (!newLanguage) {
                 throw Error('Bad new language');
@@ -47,11 +47,7 @@
         }
 
         getLocalesToDisplay(): string[] {
-            return Object.values(AvailableLocales)
-                .sort()
-                .map(
-                    locale => locale.charAt(0).toUpperCase() + locale.slice(1)
-                );
+            return Object.values(AvailableLocales).sort();
         }
     }
 </script>

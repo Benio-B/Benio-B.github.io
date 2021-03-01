@@ -11,7 +11,7 @@ describe('BurgerMenu', () => {
                     $t,
                 },
             },
-        } as MountingOptions<{}>);
+        } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
 
         expect(
             wrapper.find('[data-test=menu-container]').exists()
@@ -57,7 +57,7 @@ describe('BurgerMenu', () => {
                     $t,
                 },
             },
-        } as MountingOptions<{}>);
+        } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
         wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
@@ -92,7 +92,8 @@ describe('BurgerMenu', () => {
                     $t,
                 },
             },
-        } as MountingOptions<{}>);
+        } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
+
         wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 

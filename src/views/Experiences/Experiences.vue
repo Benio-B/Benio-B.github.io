@@ -1,7 +1,5 @@
 <template>
-    <div class="title-view">
-        Experiences page. Empty
-    </div>
+    <div class="title-view">Experiences page. Empty</div>
 </template>
 
 <script lang="ts">

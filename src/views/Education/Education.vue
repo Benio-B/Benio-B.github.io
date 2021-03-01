@@ -1,7 +1,5 @@
 <template>
-    <div class="title-view">
-        Education page. Empty
-    </div>
+    <div class="title-view">Education page. Empty</div>
 </template>
 
 <script lang="ts">

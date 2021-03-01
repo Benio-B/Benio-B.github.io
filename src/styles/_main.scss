@@ -1,5 +1,6 @@
-@import '_variables.scss';
-@import '_menu.scss';
+@import 'home';
+@import 'variables';
+@import 'menu';
 @import 'selector';
 
 body {
@@ -23,9 +24,5 @@ body {
 }
 
 .main-page {
-    text-align: center;
-}
-
-.title-view {
     text-align: center;
 }

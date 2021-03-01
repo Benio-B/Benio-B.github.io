@@ -6,6 +6,14 @@
     "education": "Formation",
     "contact": "Contact"
   },
+  "home": {
+    "presentation_title": "Ingénieur Développeur Web",
+    "presentation_title_company_name_at": "À",
+    "presentation_title_company_name": "Enalean",
+    "presentation_name": "Bonjour 👋 ! Je suis Benjamin Bouillot, développeur web sur la région grenobloise.",
+    "presentation_other": "Ce portfolio présente ma passion qui est le développement, ainsi que mes differentes expériences profesionnelles et personelles.",
+    "presentation_final": "Le développement est une véritable passion depuis des années, c'est pour cela que j'ai entrepris dans études alliant développement et gestion grâce à un Master MIAGE à l'UGA en 2020"
+  },
   "title": {
     "home": "Bienvenue ici !"
   }
