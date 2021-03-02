@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "lint:fix": "eslint --fix --ext .ts,.vue .",
     "prettier": "prettier --write '**/*.vue' '**/*.ts' '**/*.scss' '!src/shims-vue.d.ts'",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "deploy": "node deploy-gh-pages.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
