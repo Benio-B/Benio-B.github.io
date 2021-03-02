@@ -1,6 +1,7 @@
 .title-view {
     text-align: center;
     font-size: 1.4rem;
+    margin: $margin-medium;
 }
 
 .home-presentation-title-container {
@@ -46,4 +47,21 @@
         width: 0%;
         opacity: 0;
     }
+}
+
+.home-presentation-sentence {
+    margin: $margin-medium;
+}
+
+.home-title-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-title-icon {
+    color: $primary_color_text;
+}
+
+.home-title-icon-container {
+    margin: $margin-little;
 }

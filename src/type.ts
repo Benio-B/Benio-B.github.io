@@ -4,3 +4,9 @@ export interface Item {
     iconName: string;
     path: string;
 }
+
+export interface ItemIconLink {
+    iconName: string;
+    iconNamePrefix: string;
+    link: string;
+}

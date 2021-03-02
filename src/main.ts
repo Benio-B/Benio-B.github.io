@@ -14,7 +14,9 @@ import {
     faTimes,
     faAddressCard,
     faGraduationCap,
+    faAt,
 } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 library.add(faBars);
 library.add(faIgloo);
@@ -23,6 +25,9 @@ library.add(faBeer);
 library.add(faTimes);
 library.add(faAddressCard);
 library.add(faGraduationCap);
+library.add(faGithub);
+library.add(faLinkedin);
+library.add(faAt);
 
 const i18n = createI18n({
     messages,
