@@ -1,2 +1,3 @@
 src/shims-vue.d.ts
 build/
+deploy-gh-pages.js
