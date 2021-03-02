@@ -63,7 +63,7 @@
                 {
                     iconName: 'linkedin',
                     iconNamePrefix: 'fab',
-                    link: 'www.linkedin.com/in/benjamin-bouillot',
+                    link: 'https://www.linkedin.com/in/benjamin-bouillot',
                 },
                 {
                     iconName: 'at',
