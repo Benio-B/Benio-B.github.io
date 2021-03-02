@@ -2,17 +2,17 @@
 
 Here it's my portfolio's sources.
 
-You can go to [benio-b.github.io](here) to see the result.
+You can go to [here](https://benio-b.github.io) to see the result.
 
 🚧 At the moment, the site is under construction. All pages are not created.
 
 ## Stack
-This web site is build with [https://v3.vuejs.org/](Vue 3), [https://sass-lang.com/](Sass) and [https://www.typescriptlang.org/](TypeScript).
-There is i18n with [https://github.com/intlify/vue-i18n-next](Vue i18n).
+This web site is build with [Vue 3](https://v3.vuejs.org/), [Sass](https://sass-lang.com/) and [TypeScript](https://www.typescriptlang.org/).
+There is i18n with [Vue i18n](https://github.com/intlify/vue-i18n-next).
 
-Of course, there is [https://eslint.org/](ESLint) and [https://prettier.io/](Prettier) to help me 😋!
+Of course, there is [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to help me 😋!
 
-And [https://jestjs.io/](Jest) to test some dark part of the code 🧐.
+And [Jest](https://jestjs.io/) to test some dark part of the code 🧐.
 
 ## Here there are existing commands
 ### Run the project
@@ -38,6 +38,6 @@ npm run prettier
 
 ## Next features
 In next time, I want:
-- to use [https://pa11y.org/](Pa11y) to have an accessible site for more people.
+- to use [Pa11y](https://pa11y.org/) to have an accessible site for more people.
 - have more test
 - what else?
