@@ -18,6 +18,7 @@
             /></a>
         </div>
     </div>
+    <div class="copyright">© 2021 - Benjamin Bouillot</div>
 </template>
 
 <script lang="ts">
