@@ -9,6 +9,8 @@
                         ref="titleCompanyNameLink"
                         class="home-presentation-title-company-name"
                         href="https://www.enalean.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {{ $t('home.presentation_title_company_name') }}
                     </a>
@@ -31,7 +33,12 @@
             v-bind:key="item.iconName"
             class="home-title-icon-container"
         >
-            <a v-bind:href="item.link" v-bind:aria-label="item.linkLabel">
+            <a
+                v-bind:href="item.link"
+                v-bind:aria-label="item.linkLabel"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <font-awesome-icon
                     class="home-title-icon"
                     v-bind:icon="[item.iconNamePrefix, item.iconName]"

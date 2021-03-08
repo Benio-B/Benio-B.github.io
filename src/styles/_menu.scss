@@ -20,7 +20,8 @@
     height: 150px;
     top: -75px;
     left: -75px;
-    transition: top 300ms, left 300ms, width 300ms, height 300ms, border-radius 600ms;
+    transition: top 300ms, left 300ms, width 300ms, height 300ms,
+        border-radius 600ms;
     transition-timing-function: linear;
 }
 
@@ -31,7 +32,8 @@
     border-radius: 0;
     top: 0;
     left: 0;
-    transition: top 300ms, left 300ms, width 300ms, height 300ms, border-radius 200ms;
+    transition: top 300ms, left 300ms, width 300ms, height 300ms,
+        border-radius 200ms;
     transition-timing-function: linear;
 }
 
