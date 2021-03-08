@@ -27,29 +27,9 @@
             {{ $t('home.presentation_final') }}
         </div>
     </div>
-    <div class="home-title-icons-container">
-        <div
-            v-for="item in itemsIconsLink"
-            v-bind:key="item.iconName"
-            class="home-title-icon-container"
-        >
-            <a
-                v-bind:href="item.link"
-                v-bind:aria-label="item.linkLabel"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <font-awesome-icon
-                    class="home-title-icon"
-                    v-bind:icon="[item.iconNamePrefix, item.iconName]"
-                    size="3x"
-            /></a>
-        </div>
-    </div>
 </template>
 
 <script lang="ts">
-    import { ItemIconLink } from '@/type';
     import { Options, Vue } from 'vue-class-component';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -61,29 +41,6 @@
     export default class Home extends Vue {
         private mouseIsLeaved = false;
         private animationIsEnded = false;
-
-        get itemsIconsLink(): ItemIconLink[] {
-            return [
-                {
-                    iconName: 'github',
-                    iconNamePrefix: 'fab',
-                    link: 'https://github.com/Benio-B',
-                    linkLabel: 'GitHub',
-                },
-                {
-                    iconName: 'linkedin',
-                    iconNamePrefix: 'fab',
-                    link: 'https://www.linkedin.com/in/benjamin-bouillot',
-                    linkLabel: 'Linkedin',
-                },
-                {
-                    iconName: 'at',
-                    iconNamePrefix: 'fas',
-                    link: 'mailto:benjamin.bouillot@live.fr',
-                    linkLabel: this.$t('sendMail'),
-                },
-            ];
-        }
 
         mounted(): void {
             const titleCompanyNameLink = this.$refs.titleCompanyNameLink;

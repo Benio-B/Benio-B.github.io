@@ -21,3 +21,16 @@ body {
 .main-page {
     text-align: center;
 }
+
+.footer-title-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title-icon {
+    color: $primary_color_text;
+}
+
+.footer-title-icon-container {
+    margin: $margin-little;
+}
