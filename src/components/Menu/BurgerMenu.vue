@@ -87,12 +87,6 @@
                     iconName: 'beer',
                     path: '/projects',
                 },
-                {
-                    name: this.$t('menu.contact'),
-                    id: 'contact',
-                    iconName: 'address-card',
-                    path: '/contact',
-                },
             ];
         }
 

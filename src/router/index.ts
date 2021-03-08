@@ -3,7 +3,6 @@ import Home from '@/views/Home/Home.vue';
 import Experiences from '@/views/Experiences/Experiences.vue';
 import Education from '@/views/Education/Education.vue';
 import Projects from '@/views/Project/Projects.vue';
-import Contact from '@/views/Contact/Contact.vue';
 
 const routes: Array<RouteRecordRaw> = [];
 
@@ -11,7 +10,6 @@ routes.push({ path: '/', component: Home });
 routes.push({ path: '/experiences', component: Experiences });
 routes.push({ path: '/education', component: Education });
 routes.push({ path: '/projects', component: Projects });
-routes.push({ path: '/contact', component: Contact });
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),

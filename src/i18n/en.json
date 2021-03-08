@@ -4,10 +4,9 @@
   "sendMail": "Send a mail",
   "menu": {
     "home": "Home",
-    "experiences": "Experiences",
+    "experiences": "Work Experiences",
     "projects": "Projects",
-    "education": "Education",
-    "contact": "Contact"
+    "education": "Education"
   },
   "home": {
     "presentation_title": "Web Developer Engineer",
