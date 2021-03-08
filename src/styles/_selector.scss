@@ -3,6 +3,10 @@
     top: 0;
     right: 0;
     margin: $margin-little;
+    
+    :hover {
+        cursor: pointer;
+    }
 }
 
 $transition: cubic-bezier(0.86, 0, 0.07, 1);

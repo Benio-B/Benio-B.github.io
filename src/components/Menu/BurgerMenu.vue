@@ -2,6 +2,7 @@
     <div
         class="menu-container"
         data-test="menu-container"
+        id="menu-container"
         v-bind:class="{
             'menu-is-opened': showListMenuItems,
             'menu-is-closed': !showListMenuItems,
@@ -39,6 +40,7 @@
                 data-test="close-menu-burger"
                 class="menu-close-icon"
                 ref="closeMenuItemsIcon"
+                v-bind:aria-label="$t('projects')"
             >
                 <font-awesome-icon icon="times" size="2x" />
             </div>

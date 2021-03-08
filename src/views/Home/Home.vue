@@ -1,18 +1,20 @@
 <template>
     <div class="title-view">
-        <div class="home-presentation-title-container">
-            {{ $t('home.presentation_title') }}
-            <div>
-                {{ $t('home.presentation_title_company_name_at') }}
-                <a
-                    ref="titleCompanyNameLink"
-                    class="home-presentation-title-company-name"
-                    href="https://www.enalean.com/"
-                >
-                    {{ $t('home.presentation_title_company_name') }}
-                </a>
+        <h1>
+            <div class="home-presentation-title-container">
+                {{ $t('home.presentation_title') }}
+                <div>
+                    {{ $t('home.presentation_title_company_name_at') }}
+                    <a
+                        ref="titleCompanyNameLink"
+                        class="home-presentation-title-company-name"
+                        href="https://www.enalean.com/"
+                    >
+                        {{ $t('home.presentation_title_company_name') }}
+                    </a>
+                </div>
             </div>
-        </div>
+        </h1>
         <div class="home-presentation-sentence">
             {{ $t('home.presentation_name') }}
         </div>
@@ -29,7 +31,7 @@
             v-bind:key="item.iconName"
             class="home-title-icon-container"
         >
-            <a v-bind:href="item.link">
+            <a v-bind:href="item.link" v-bind:aria-label="item.linkLabel">
                 <font-awesome-icon
                     class="home-title-icon"
                     v-bind:icon="[item.iconNamePrefix, item.iconName]"
@@ -59,16 +61,19 @@
                     iconName: 'github',
                     iconNamePrefix: 'fab',
                     link: 'https://github.com/Benio-B',
+                    linkLabel: 'GitHub',
                 },
                 {
                     iconName: 'linkedin',
                     iconNamePrefix: 'fab',
                     link: 'https://www.linkedin.com/in/benjamin-bouillot',
+                    linkLabel: 'Linkedin',
                 },
                 {
                     iconName: 'at',
                     iconNamePrefix: 'fas',
                     link: 'mailto:benjamin.bouillot@live.fr',
+                    linkLabel: this.$t('sendMail'),
                 },
             ];
         }

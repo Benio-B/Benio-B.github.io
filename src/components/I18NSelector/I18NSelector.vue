@@ -1,17 +1,20 @@
 <template>
     <div class="selector-language-container">
-        <div class="can-toggle demo-rebrand-2">
+        <div class="can-toggle">
             <input
-                id="e"
+                id="selector-language"
                 type="checkbox"
                 class="selector-language-checkbox"
                 @change="updateLanguage($event)"
+                v-bind:aria-label="
+                    $t('switchLanguage', { language: getLongLocale() })
+                "
                 v-bind:checked="
                     getLocalesToDisplay()[0].toLowerCase() ===
                     $i18n.locale.toLowerCase()
                 "
             />
-            <label for="e" class="selector-language-label">
+            <label for="selector-language" class="selector-language-label">
                 <div
                     class="selector-language-switch"
                     v-bind:data-checked="getLocalesToDisplay()[0]"
@@ -23,7 +26,7 @@
 </template>
 
 <script lang="ts">
-    import { AvailableLocales } from '@/i18n/locales';
+    import { AvailableLocales, getLongLocale } from '@/i18n/locales';
     import { Vue } from 'vue-class-component';
     import { Mutation } from 'vuex-class';
 
@@ -48,6 +51,18 @@
 
         getLocalesToDisplay(): string[] {
             return Object.values(AvailableLocales).sort();
+        }
+
+        getLongLocale(): string {
+            const notSelectedLocale = Object.values(
+                this.$i18n.availableLocales
+            ).find((l) => l !== this.$i18n.locale);
+
+            if (!notSelectedLocale) {
+                throw Error('Bad not selected language');
+            }
+
+            return getLongLocale(notSelectedLocale);
         }
     }
 </script>

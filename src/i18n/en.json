@@ -1,4 +1,7 @@
 {
+  "switchLanguage": "Mettre en {language}",
+  "close": "Close",
+  "sendMail": "Send a mail",
   "menu": {
     "home": "Home",
     "experiences": "Experiences",

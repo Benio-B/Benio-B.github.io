@@ -9,4 +9,5 @@ export interface ItemIconLink {
     iconName: string;
     iconNamePrefix: string;
     link: string;
+    linkLabel: string;
 }

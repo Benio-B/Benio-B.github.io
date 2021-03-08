@@ -1,7 +1,7 @@
 <template>
-    <burger-menu />
-    <router-view></router-view>
-    <i-18-n-selector />
+    <nav aria-label="Menu"><burger-menu /></nav>
+    <main><router-view></router-view></main>
+    <nav aria-label="Language"><i-18-n-selector /></nav>
 </template>
 
 <script lang="ts">
