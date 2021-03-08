@@ -6,7 +6,7 @@
     border-radius: 50%;
     will-change: height;
     will-change: width;
-    transition-duration: 1s;
+    transition-duration: 500ms;
     background: $menu_background_color;
 }
 
@@ -20,7 +20,7 @@
     height: 150px;
     top: -75px;
     left: -75px;
-    transition: top 0.5s, left 0.5s, width 0.8s, height 0.8s, border-radius 0.8s;
+    transition: top 300ms, left 300ms, width 300ms, height 300ms, border-radius 600ms;
     transition-timing-function: linear;
 }
 
@@ -31,7 +31,7 @@
     border-radius: 0;
     top: 0;
     left: 0;
-    transition: top 0.9s, left 0.9s, width 0.8s, height 0.8s, border-radius 0.8s;
+    transition: top 300ms, left 300ms, width 300ms, height 300ms, border-radius 200ms;
     transition-timing-function: linear;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .list-menu-items {
-    animation: keyframe-show-menu 1s both;
+    animation: keyframe-show-menu 500ms both;
     display: flex;
     height: 100vh;
     align-items: center;
@@ -132,7 +132,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    animation: keyframe-show-menu 1s both;
+    animation: keyframe-show-menu 500ms both;
     animation-iteration-count: 1;
     color: $menu_item_color;
 }
@@ -148,14 +148,14 @@
     content: ' ';
     display: block;
     margin: 0 auto;
-    transition: all 350ms ease;
+    transition: all 250ms ease;
     width: 0;
 }
 
 .menu-item-container:hover:after,
 .menu-item-container:hover:before {
     border-color: $menu_item_color;
-    transition: width 350ms ease;
+    transition: width 250ms ease;
     width: 100%;
 }
 
