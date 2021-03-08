@@ -10,6 +10,7 @@ routes.push({ path: '/', component: Home });
 routes.push({ path: '/experiences', component: Experiences });
 routes.push({ path: '/education', component: Education });
 routes.push({ path: '/projects', component: Projects });
+routes.push({ path: '/:pathMatch(.*)*', redirect: '/' });
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
