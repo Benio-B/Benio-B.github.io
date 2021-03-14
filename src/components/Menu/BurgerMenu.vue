@@ -71,13 +71,13 @@
                 },
                 {
                     name: this.$t('menu.experiences'),
-                    id: 'cv',
+                    id: 'experiences',
                     iconName: 'user',
                     path: '/experiences',
                 },
                 {
                     name: this.$t('menu.education'),
-                    id: 'cv',
+                    id: 'education',
                     iconName: 'graduation-cap',
                     path: '/education',
                 },

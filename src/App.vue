@@ -32,7 +32,6 @@
         }
 
         onHideMenu(): void {
-            console.log('hide');
             this.menuIsDisplaying = false;
         }
     }

@@ -26,6 +26,7 @@ describe('BurgerMenu', () => {
         wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
+        expect(wrapper.emitted('on-display-menu')).toBeTruthy();
         expect(
             wrapper.find('[data-test=menu-container]').exists()
         ).toBeTruthy();
@@ -39,6 +40,7 @@ describe('BurgerMenu', () => {
         wrapper.find('[data-test=close-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
+        expect(wrapper.emitted('on-hide-menu')).toBeTruthy();
         expect(
             wrapper.find('[data-test=menu-container]').exists()
         ).toBeTruthy();
@@ -74,6 +76,7 @@ describe('BurgerMenu', () => {
         wrapper.findComponent(BurgerMenuItem).vm.$emit('on-click-item');
         await wrapper.vm.$nextTick();
 
+        expect(wrapper.emitted('on-hide-menu')).toBeTruthy();
         expect(
             wrapper.find('[data-test=menu-container]').exists()
         ).toBeTruthy();
@@ -104,8 +107,45 @@ describe('BurgerMenu', () => {
             wrapper.find('[data-test=item-list-projects]').exists()
         ).toBeTruthy();
         expect(
-            wrapper.find('[data-test=item-list-contact]').exists()
+            wrapper.find('[data-test=item-list-experiences]').exists()
         ).toBeTruthy();
-        expect(wrapper.find('[data-test=item-list-cv]').exists()).toBeTruthy();
+        expect(
+            wrapper.find('[data-test=item-list-education]').exists()
+        ).toBeTruthy();
+    });
+
+    it('When menu is opened and escape touch is pressed, Then menu is closed and event i emitted', async () => {
+        const elem = document.createElement('div');
+        if (document.body) {
+            document.body.appendChild(elem);
+        }
+        const wrapper = shallowMount(BurgerMenu, {
+            global: {
+                mocks: {
+                    $t,
+                },
+            },
+            attachTo: elem,
+        } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
+        wrapper.find('[data-test=open-menu-burger]').trigger('click');
+        await wrapper.vm.$nextTick();
+        expect(wrapper.emitted('on-display-menu')).toBeTruthy();
+
+        wrapper.trigger('keydown', {
+            key: 'Escape',
+        });
+        await wrapper.vm.$nextTick();
+        await wrapper.vm.$nextTick();
+
+        expect(wrapper.emitted('on-hide-menu')).toBeTruthy();
+        expect(
+            wrapper.find('[data-test=menu-container]').exists()
+        ).toBeTruthy();
+        expect(wrapper.find('[data-test=menu-container]').classes()).toContain(
+            'menu-is-closed'
+        );
+        expect(
+            wrapper.find('[data-test=menu-container]').classes()
+        ).not.toContain('menu-is-opened');
     });
 });
