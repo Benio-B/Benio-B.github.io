@@ -116,10 +116,19 @@
             }
 
             closeMenuItemsIcon.addEventListener('click', () => {
-                this.showListMenuItems = false;
-
-                window.removeEventListener('scroll', this.noScroll);
+                this.onCloseMenu();
             });
+
+            document.addEventListener('keydown', (e) => {
+                if (this.showListMenuItems && e.key == 'Escape') {
+                    this.onCloseMenu();
+                }
+            });
+        }
+
+        onCloseMenu(): void {
+            this.showListMenuItems = false;
+            window.removeEventListener('scroll', this.noScroll);
         }
 
         onClickItem(): void {
