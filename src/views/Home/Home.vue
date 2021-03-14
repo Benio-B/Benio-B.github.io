@@ -26,6 +26,12 @@
         <div class="home-presentation-sentence">
             {{ $t('home.presentation_final') }}
         </div>
+        <div class="home-presentation-resume-container">
+            {{ $t('home.presentation_cv') }}
+            <a href="/assets/cv.pdf" download>
+                {{ $t('home.presentation_cv_download') }}
+            </a>
+        </div>
     </div>
 </template>
 
