@@ -104,8 +104,8 @@
             }
 
             menuBurgerItemIcon.addEventListener('click', () => {
+                this.$emit('on-display-menu');
                 this.showListMenuItems = true;
-
                 window.addEventListener('scroll', this.noScroll);
             });
 
@@ -116,24 +116,19 @@
             }
 
             closeMenuItemsIcon.addEventListener('click', () => {
-                this.onCloseMenu();
+                this.onClickItem();
             });
 
             document.addEventListener('keydown', (e) => {
                 if (this.showListMenuItems && e.key == 'Escape') {
-                    this.onCloseMenu();
+                    this.onClickItem();
                 }
             });
         }
 
-        onCloseMenu(): void {
-            this.showListMenuItems = false;
-            window.removeEventListener('scroll', this.noScroll);
-        }
-
         onClickItem(): void {
+            this.$emit('on-hide-menu');
             this.showListMenuItems = false;
-
             window.removeEventListener('scroll', this.noScroll);
         }
     }
