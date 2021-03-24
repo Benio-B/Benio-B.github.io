@@ -17,5 +17,16 @@
     "presentation_final": "Le développement est une véritable passion depuis des années, c'est pour cela que j'ai obtenu un Master MIAGE en 2020 à l'UGA.",
     "presentation_cv": "Vous pouvez télécharger mon CV :",
     "presentation_cv_download": "ici!"
+  },
+  "experiences": {
+    "enalean_1021_present": {
+      "title": "Ingénieur Développeur Web",
+      "content_1": "Je développe aussi bien la partie front que back de Tuleap, incluant les <strong>integrations de maquette</strong> (en Vue.Js + TypeScript), l'amélioration et la maintenance de l'<strong>API Rest</strong> (PHP), et l'écriture de <strong>tests</strong> unitaires, d'integrations, de bout en bout ou encore de validation.",
+      "content_2": "Durant cette période, j'ai travaillé sur la création d'une <strong>intégration de GitLab</strong> au sein de Tuleap, permettant de <strong>référencer des artifacts/issues de Tuleap</strong> au sein d'un commit ou une Merge Request GitLab.",
+      "content_2_link_begin": "Une vidéo de présentation est disponible {0}.",
+      "content_2_link_end": "ici",
+      "content_3": "<strong>Langages utilisés</strong> : PHP, Vue.Js, TypeScript/JavaScript, PHPUnit, Jest, Mock, Cypress",
+      "content_4": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Nix, Webpack"
+    }
   }
 }

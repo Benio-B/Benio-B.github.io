@@ -5,7 +5,12 @@ import store from './store';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { createI18n } from 'vue-i18n';
-import { messages, defaultLocale, fallbackLocale } from '@/i18n';
+import {
+    messages,
+    defaultLocale,
+    fallbackLocale,
+    datetimeFormats,
+} from '@/i18n';
 import {
     faBars,
     faIgloo,
@@ -33,6 +38,7 @@ const i18n = createI18n({
     messages,
     locale: defaultLocale(),
     fallbackLocale: fallbackLocale,
+    datetimeFormats,
 });
 
 const app = createApp(App);

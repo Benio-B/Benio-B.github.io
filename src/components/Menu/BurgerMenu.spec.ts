@@ -114,7 +114,7 @@ describe('BurgerMenu', () => {
         ).toBeTruthy();
     });
 
-    it('When menu is opened and escape touch is pressed, Then menu is closed and event i emitted', async () => {
+    it('When menu is opened and escape touch is pressed, Then menu is closed and event is emitted', async () => {
         const elem = document.createElement('div');
         if (document.body) {
             document.body.appendChild(elem);
