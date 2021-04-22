@@ -37,13 +37,7 @@
 
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-    @Options({
-        components: {
-            FontAwesomeIcon,
-        },
-    })
     export default class Home extends Vue {
         private mouseIsLeaved = false;
         private animationIsEnded = false;

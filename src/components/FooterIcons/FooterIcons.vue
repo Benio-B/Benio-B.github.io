@@ -11,11 +11,14 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <font-awesome-icon
+                <component
+                    v-bind:is="item.componentName"
                     class="footer-title-icon"
-                    v-bind:icon="[item.iconNamePrefix, item.iconName]"
-                    size="3x"
-            /></a>
+                    v-bind:size="50"
+                    weight="bold"
+                >
+                </component>
+            </a>
         </div>
     </div>
     <div class="copyright">© 2021 - Benjamin Bouillot</div>
@@ -23,26 +26,31 @@
 
 <script lang="ts">
     import { ItemIconLink } from '@/type';
-    import { Vue } from 'vue-class-component';
+    import { Options, Vue } from 'vue-class-component';
+    import { PhAt, PhGithubLogo, PhLinkedinLogo } from 'phosphor-vue';
 
+    @Options({
+        components: {
+            PhAt,
+            PhGithubLogo,
+            PhLinkedinLogo,
+        },
+    })
     export default class FooterIcons extends Vue {
         get itemsIconsLink(): ItemIconLink[] {
             return [
                 {
-                    iconName: 'github',
-                    iconNamePrefix: 'fab',
+                    componentName: 'PhGithubLogo',
                     link: 'https://github.com/Benio-B',
                     linkLabel: 'GitHub',
                 },
                 {
-                    iconName: 'linkedin',
-                    iconNamePrefix: 'fab',
+                    componentName: 'PhLinkedinLogo',
                     link: 'https://www.linkedin.com/in/benjamin-bouillot',
                     linkLabel: 'Linkedin',
                 },
                 {
-                    iconName: 'at',
-                    iconNamePrefix: 'fas',
+                    componentName: 'PhAt',
                     link: 'mailto:benjamin.bouillot@live.fr',
                     linkLabel: this.$t('sendMail'),
                 },

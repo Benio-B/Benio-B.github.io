@@ -17,6 +17,7 @@
     import BurgerMenu from './components/Menu/BurgerMenu.vue';
     import I18NSelector from './components/I18NSelector/I18NSelector.vue';
     import FooterIcons from './components/FooterIcons/FooterIcons.vue';
+
     @Options({
         components: {
             BurgerMenu,

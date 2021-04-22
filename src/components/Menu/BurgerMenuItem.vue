@@ -6,26 +6,17 @@
             v-on:click.capture="$emit('on-click-item')"
             data-test="on-click-item"
         >
-            <font-awesome-icon
-                v-bind:icon="item.iconName"
-                class="menu-item-icon"
-            />
+            <slot />
             {{ item.name }}
         </router-link>
     </div>
 </template>
 
 <script lang="ts">
-    import { Options, Vue } from 'vue-class-component';
+    import { Vue } from 'vue-class-component';
     import { Prop } from 'vue-property-decorator';
     import { Item } from '../../type';
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-    @Options({
-        components: {
-            FontAwesomeIcon,
-        },
-    })
     export default class BurgerMenuItem extends Vue {
         @Prop()
         private readonly item!: Item;

@@ -1,13 +1,12 @@
 export interface Item {
     name: string;
     id: string;
-    iconName: string;
+    componentName: string;
     path: string;
 }
 
 export interface ItemIconLink {
-    iconName: string;
-    iconNamePrefix: string;
+    componentName: string;
     link: string;
     linkLabel: string;
 }

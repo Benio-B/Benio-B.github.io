@@ -14,10 +14,10 @@
             class="corner-menu-container-animated"
         >
             <div class="corner-menu-icon">
-                <font-awesome-icon
-                    icon="bars"
-                    size="lg"
+                <ph-list
                     class="menu-burger-icon"
+                    v-bind:size="25"
+                    weight="bold"
                 />
             </div>
         </div>
@@ -32,7 +32,12 @@
                         <burger-menu-item
                             v-bind:item="item"
                             v-on:on-click-item="onClickItem"
-                        />
+                        >
+                            <component
+                                v-bind:is="item.componentName"
+                                class="menu-item-icon"
+                            ></component>
+                        </burger-menu-item>
                     </li>
                 </ul>
             </div>
@@ -42,7 +47,7 @@
                 ref="closeMenuItemsIcon"
                 v-bind:aria-label="$t('projects')"
             >
-                <font-awesome-icon icon="times" size="2x" />
+                <ph-x v-bind:size="30" weight="bold" />
             </div>
         </div>
     </div>
@@ -51,13 +56,25 @@
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
     import BurgerMenuItem from './BurgerMenuItem.vue';
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     import { Item } from '../../type';
+    import {
+        PhList,
+        PhX,
+        PhHouse,
+        PhSuitcase,
+        PhGraduationCap,
+        PhMartini,
+    } from 'phosphor-vue';
 
     @Options({
         components: {
             BurgerMenuItem,
-            FontAwesomeIcon,
+            PhList,
+            PhX,
+            PhHouse,
+            PhSuitcase,
+            PhGraduationCap,
+            PhMartini,
         },
     })
     export default class BurgerMenu extends Vue {
@@ -66,25 +83,25 @@
                 {
                     name: this.$t('menu.home'),
                     id: 'home',
-                    iconName: 'igloo',
+                    componentName: 'PhHouse',
                     path: '/',
                 },
                 {
                     name: this.$t('menu.experiences'),
                     id: 'experiences',
-                    iconName: 'user',
+                    componentName: 'PhSuitcase',
                     path: '/experiences',
                 },
                 {
                     name: this.$t('menu.education'),
                     id: 'education',
-                    iconName: 'graduation-cap',
+                    componentName: 'PhGraduationCap',
                     path: '/education',
                 },
                 {
                     name: this.$t('menu.projects'),
                     id: 'projects',
-                    iconName: 'beer',
+                    componentName: 'PhMartini',
                     path: '/projects',
                 },
             ];

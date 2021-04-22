@@ -2,8 +2,6 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { createI18n } from 'vue-i18n';
 import {
     messages,
@@ -11,28 +9,7 @@ import {
     fallbackLocale,
     datetimeFormats,
 } from '@/i18n';
-import {
-    faBars,
-    faIgloo,
-    faUser,
-    faBeer,
-    faTimes,
-    faAddressCard,
-    faGraduationCap,
-    faAt,
-} from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-library.add(faBars);
-library.add(faIgloo);
-library.add(faUser);
-library.add(faBeer);
-library.add(faTimes);
-library.add(faAddressCard);
-library.add(faGraduationCap);
-library.add(faGithub);
-library.add(faLinkedin);
-library.add(faAt);
+import { PhSuitcase, PhMartini, PhHouse, PhGraduationCap } from 'phosphor-vue';
 
 const i18n = createI18n({
     messages,
@@ -46,5 +23,8 @@ const app = createApp(App);
 app.use(i18n);
 app.use(store);
 app.use(router);
-app.component('font-awesome-icon', FontAwesomeIcon);
+app.component('ph-house', PhHouse);
+app.component('ph-suitcase', PhSuitcase);
+app.component('ph-martini', PhMartini);
+app.component('ph-graduation-cap', PhGraduationCap);
 app.mount('#app');
