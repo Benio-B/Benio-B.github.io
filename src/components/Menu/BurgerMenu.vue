@@ -45,7 +45,7 @@
                 data-test="close-menu-burger"
                 class="menu-close-icon"
                 ref="closeMenuItemsIcon"
-                v-bind:aria-label="$t('projects')"
+                v-bind:aria-label="$t('close')"
             >
                 <ph-x v-bind:size="30" weight="bold" />
             </div>
