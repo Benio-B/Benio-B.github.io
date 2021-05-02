@@ -52,7 +52,7 @@
                 {
                     componentName: 'PhAt',
                     link: 'mailto:benjamin.bouillot@live.fr',
-                    linkLabel: this.$t('sendMail'),
+                    linkLabel: this.$t('send_mail'),
                 },
             ];
         }

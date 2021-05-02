@@ -1,7 +1,7 @@
 {
-  "switchLanguage": "Switch language to {language}",
+  "switch_language": "Switch language to {language}",
   "close": "Fermer",
-  "sendMail": "Envoyer un mail",
+  "send_mail": "Envoyer un mail",
   "menu": {
     "home": "Accueil",
     "experiences": "Expériences",
@@ -16,7 +16,7 @@
     "presentation_other": "Ici vous trouverez mes différentes expériences professionnelles ainsi que quelques projets personnels que j'ai réalisé.",
     "presentation_final": "Le développement est une véritable passion depuis des années, c'est pour cela que j'ai obtenu un Master MIAGE en 2020 à l'UGA.",
     "presentation_cv": "Vous pouvez télécharger mon CV :",
-    "presentation_cv_download": "ici!"
+    "presentation_cv_download": "ici !"
   },
   "experiences": {
     "enalean_1021_present": {

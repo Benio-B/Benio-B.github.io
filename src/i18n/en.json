@@ -1,7 +1,7 @@
 {
-  "switchLanguage": "Mettre en {language}",
+  "switch_language": "Mettre en {language}",
   "close": "Close",
-  "sendMail": "Send a mail",
+  "send_mail": "Send a mail",
   "menu": {
     "home": "Home",
     "experiences": "Work Experiences",

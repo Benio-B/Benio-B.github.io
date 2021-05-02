@@ -7,7 +7,7 @@
                 class="selector-language-checkbox"
                 @change="updateLanguage($event)"
                 v-bind:aria-label="
-                    $t('switchLanguage', { language: getLongLocale() })
+                    $t('switch_language', { language: getLongLocale() })
                 "
                 v-bind:checked="
                     getLocalesToDisplay()[0].toLowerCase() ===
