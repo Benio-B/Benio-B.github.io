@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import { getStore } from './store';
 import { createI18n } from 'vue-i18n';
 import {
     messages,
@@ -20,8 +20,10 @@ const i18n = createI18n({
 
 const app = createApp(App);
 
+const is_production = process.env.NODE_ENV === 'production';
+
 app.use(i18n);
-app.use(store);
+app.use(getStore(is_production));
 app.use(router);
 app.component('ph-house', PhHouse);
 app.component('ph-suitcase', PhSuitcase);
