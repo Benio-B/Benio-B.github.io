@@ -1,5 +1,4 @@
 <template>
-    <div>experiences displayer</div>
     <div class="experiences-container">
         <experience-displayer
             v-for="experience in experiences"
@@ -26,7 +25,9 @@
                         'experiences.enalean_1021_present.content_1'
                     ),
                     date_begin: new Date(2020, 9),
-                    date_end: 'Present',
+                    date_end: this.$t(
+                        'experiences.enalean_1021_present.date_end'
+                    ),
                     enterprise: 'Enalean',
                     content_2: this.$t(
                         'experiences.enalean_1021_present.content_2'

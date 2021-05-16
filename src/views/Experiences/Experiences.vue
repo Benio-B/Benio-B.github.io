@@ -1,5 +1,9 @@
 <template>
-    <div class="title-view">Experiences page. Empty</div>
+    <h1>
+        <div class="home-presentation-title-container">
+            {{ $t('experiences.title') }}
+        </div>
+    </h1>
     <experiences-displayer />
 </template>
 
