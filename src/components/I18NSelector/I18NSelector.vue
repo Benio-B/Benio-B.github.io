@@ -28,7 +28,7 @@
 <script lang="ts">
     import { AvailableLocales, getLongLocale } from '@/i18n/locales';
     import { Vue } from 'vue-class-component';
-    import { Mutation } from 'vuex-class';
+    import { Mutation } from 's-vuex-class';
 
     export default class Experiences extends Vue {
         @Mutation
