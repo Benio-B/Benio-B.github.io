@@ -21,41 +21,53 @@
   "experiences": {
     "title": "Professional Experiences",
     "enalean_1021_present": {
-      "entreprise": "Enalean",
+      "enterprise": "Enalean",
       "localisation": "Crolles, France",
       "title": "Web Developer Engineer",
       "date_end": "Now",
-      "content_1": "I'm a front and back developer. I <strong>integrate models</strong> on front of Tuleap (with Vue.Js + TypeScript), I maintain and upgrade the <strong>REST API</strong> (PHP). I create some <strong>tests</strong> too, like unit tests, integration tests, end-to-end tests and validation tests.",
-      "content_2": "During this period, I work on an <strong>integration of GitLab</strong> in Tuleap. This integrations allorw to <strong>reference a Tuleap's artifact/issue in GitLab</strong> commit or GitLab Merge Request.",
-      "content_2_link_begin": "You can see this integration on this video {0}.",
-      "content_2_link_end": "here",
-      "content_3": "<strong>Languages</strong>: PHP, Vue.Js, TypeScript/JavaScript, PHPUnit, Jest, Mock, Cypress",
-      "content_4": "<strong>Tools</strong>: NPM, Docker, Gerrit, Jenkins, Nix, Webpack"
+      "summary": "Into EnaleanR&D team, I take care of the development of the Front-End and Back-End parts of Tuleap.",
+      "summary_technical": "On a daily basis, I work on:",
+      "summary_example_1": "<strong>Integrations of models </strong><i>(Vue.Js + TypeScript)</i>",
+      "summary_example_2": "Improvement and maintenance of <strong>Rest API</strong> <i>(PHP)</i>",
+      "summary_example_3": "Writing <strong>Unit</strong> tests, <strong>Integration</strong> tests, <strong>End-to-End</strong> tests and <strong>Validation</strong> Tests <i>(PHPUnit, Jest, Cypress)</i>",
+      "example_title": "During this experience, I worked on different missions:",
+      "example_1_title": "Create <strong>GitLab/Tuleap Integration</strong>",
+      "example_1_explanation": "This integration allows to <strong>reference artifacts/issues from Tuleap</strong> in GitLab commit or GitLab Merge Request.",
+      "example_1_link_begin": "A presentation video is available {0}.",
+      "example_1_link_end": "here",
+      "example_2_title": "Integrate <strong>SAFe</strong> <i>(Scaled Agile Framework)</i> into Tuleap",
+      "example_2_explanation": "This plugins allows you to use SAFe within Tuleap and thus manage <i>Programs</i>, <i>Programs Iterations</i>, <i>Iteration</i> and <i>Teams</i>.",
+      "example_2_link_begin": "You can find more information about SAFe, {0}.",
+      "example_2_link_end": "here",
+      "languages": "<strong>Languages used</strong>: PHP, Vue.Js, TypeScript/JavaScript, Prototype, Vanilla.Js, Mustache, PHPUnit, Jest, Mock, Cypress",
+      "tools": "<strong>Tools used</strong>: NPM, Docker, Gerrit, Jenkins, Nix, Webpack, Scrum (Daily meeting, Code review, Pair Programming, Sprint Retrospective, Planning poker)",
+      "source_code_link_begin": "Tuleap is Open Source, so on {0} you will find my works.",
+      "source_code_link_end": "GitHub"
     },
-    "enalean_intership_master": {
-      "entreprise": "Enalean",
+    "enalean_work_study_master": {
+      "enterprise": "Enalean",
       "localisation": "Crolles, France",
       "title": "Work-Study program (1 year) - Create widget to improve Tuleap dashboard",
-      "summary": "This widget, <i>named Project Milestones</i>, resume all Milestones in development with design highlighting KPIs of agile method: Scrum (like Remaining Effort, Remaining Time, Initial Effort, Sprints, ...) and improve decision making of Product Owners or managers. I created 2 graphs (BurnDown and BurnUp) with D3.js.",
-      "technique": "It has been developed with Vue.Js and PHP. During this year, I had another mission that was to integrate and use TypeScript in Tuleap instead of JavaScript. And I improved some API REST routes",
-      "source_code_link_begin": "{0} you will find widget's source code.",
+      "summary": "This widget summarizes <i>Milestones</i> in development with with a design highlighting the <strong>KPIs of the Agile Scrum method</strong> (Remaining Effort, Remaining Time, Initial Effort, etc.). I used <strong>D3.js</strong> to create 2 graphs (BurnDown and BurnUp) too.",
+      "summary_technical": "During this year, I has an additional mission to use and <strong>integrate TypeScript</strong> into Tuleap instead of JavaScript. Finally, I created and improved some routes of Rest API.",
+      "source_code_link_begin": "{0} there is my work about the widget.",
       "source_code_link_end": "Here",
       "languages": "<strong>Languages used</strong>: PHP, Vue.Js, TypeScript, D3.js, PHPUnit, Jest, Cypress",
-      "tools": "<strong>Tools used</strong> : NPM, Docker, Gerrit, Jenkins, Webpack, Méthodologie Scrum (Code review, Pair Programming, ...)"
+      "tools": "<strong>Tools used</strong>: NPM, Docker, Gerrit, Jenkins, Webpack, Scrum (Daily meeting, Code review, Pair Programming, Sprint Retrospective)"
     },
-    "enalean_intership_licence": {
-      "entreprise": "Enalean",
+    "enalean_internship_licence": {
+      "enterprise": "Enalean",
       "localisation": "Crolles, France",
       "title": "Internship (3 months) - Development of an automation allowing the synchronization of 2 instances of Tuleap",
-      "summary": "This internship's goal was to demonstrate the possibility of synchronize 2 Tuleap's instances automatically. For example, replication of issues/artifacts from one instance to another automatically.",
-      "technique": "This automaton was has been developed with PHP. When an issue/artifact is created or updated in one Tuleap's instance, then a webhook is called in another Tuleap's instance with a payload containing all necessary informations, afterward a XML file is automatically generated with these informations and it is imported in the Tuleap's instance to replicate the issue/artifact.",
-      "languages": "<strong>Languages used</strong>: PHP, PHPUnit",
-      "tools": "<strong>Tools used</strong> : NPM, Docker, Gerrit, Jenkins, Webpack, Méthodologie Scrum (Code review, Pair Programming, ...)"
+      "summary": "This internship's goal was to demonstrate the possibility of synchronize 2 Tuleap's instances automatically. For example, <strong>replication of issues/artifacts</strong> from one instance to another automatically.",
+      "summary_technical": "When an issue/artifact is created or updated in one Tuleap's instance, then a <strong>webhook</strong> is sent to another Tuleap's instance with a payload containing all necessary information, afterward a <strong>XML file</strong> is automatically generated with these information and it is imported in the Tuleap's instance to replicate the issue/artifact.",
+      "languages": "<strong>Languages used</strong>: PHP, PHPUnit, XML",
+      "tools": "<strong>Tools used</strong>: NPM, Docker,Gerrit, Jenkins, Webpack, Scrum (Daily meeting, Code review, Pair Programming, Sprint Retrospective)"
     },
     "other_experiences": {
       "localisation": "Chambéry, France",
       "title": "Others works experiences (1 year)",
-      "summary": "When I got my High school Degree, I worked during 1 year before continue my studies. For example I worked like cleaner, grapes picker, dock agent..."
+      "summary": "When I got my High school Degree, I worked during 1 year before continue my studies. For example I worked like cleaner, grapes picker, dock agent."
     }
   }
 }

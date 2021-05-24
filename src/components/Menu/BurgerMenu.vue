@@ -56,7 +56,7 @@
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
     import BurgerMenuItem from './BurgerMenuItem.vue';
-    import { Item } from '../../type';
+    import { Item } from '@/type';
     import {
         PhList,
         PhX,

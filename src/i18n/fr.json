@@ -21,55 +21,53 @@
   "experiences": {
     "title": "Expériences professionnelles",
     "enalean_1021_present": {
-      "entreprise": "Enalean",
+      "enterprise": "Enalean",
       "localisation": "Crolles (38)",
-      "title": "Ingénieur Développeur Web",
+      "title": "CDD - Ingénieur Développeur Web",
       "date_end": "Présent",
-      "summary": "Intégré dans l'équipe R&D d'Enalean, je m'occupe du développement des parties <strong>Front-End</strong> et <strong>Back-End</strong> de Tuleap. Au quotidien j'ai comme mission :",
-      "summary_example_1": "<strong>L'integrations de maquette</strong> <i>(Vue.Js + TypeScript)</i>",
+      "summary": "Intégré dans l'équipe R&D d'Enalean, je m'occupe du développement des parties <strong>Front-End</strong> et <strong>Back-End</strong> de Tuleap.",
+      "summary_technical": "Au quotidien, je travaille sur :",
+      "summary_example_1": "<strong>L'integrations de maquettes</strong> <i>(Vue.Js + TypeScript)</i>",
       "summary_example_2": "L'amélioration et la maintenance de l'<strong>API Rest</strong> <i>(PHP)</i>",
-      "summary_example_3": "L'écriture de <strong>Tests</strong> Unitaires, d'Integrations, de Bout en Bout ou encore de Validation",
-      "summary_example_4": "Participation aux estimations et au <strong>poker planning</strong>",
-      "example_mission": { 
-        "title": "Durant cette année, j'ai eu differentes missions:",
-        "example_1_title": "Création d'une <strong>Intégration de GitLab/Tuleap</strong>",
-        "example_1_explanation": "Cette intégration permet de <strong>référencer des artifacts/tickets de Tuleap</strong> au sein d'un commit ou une Merge Request GitLab.",
-        "example_1_link_begin": "Une vidéo de présentation est disponible {0}.",
-        "example_1_link_end": "ici",
-        "example_2_title": "Mise en place de SAFe (Scaled Agile Framework) au sein de Tuleap",
-        "example_2_explanation": "Ce plugin permet d'utiliser la méthode Agile SAFe dans Tuleap. Il permet de dirigé des Teams Projects au sein de Programs Project",
-        "example_2_link_begin": "Vous pouvez trouver plus d'information sur SAFe, {0}.",
-        "example_2_link_end": "ici"
-      },
-      "languages": "<strong>Langages utilisés au quotidiend</strong> : PHP, Vue.Js, TypeScript/JavaScript, Prototype, Vanilla.Js, Mustache, PHPUnit, Jest, Mock, Cypress",
-      "tools": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Nix, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, Planning poker...)",
+      "summary_example_3": "L'écriture de <strong>Tests</strong> Unitaires, d'Integrations, de Bout en Bout ou encore de Validation <i>(PHPUnit, Jest, Cypress)</i>",
+      "example_title": "Durant cette année, j'ai eu différentes missions :",
+      "example_1_title": "Création d'une <strong>Intégration GitLab/Tuleap</strong>",
+      "example_1_explanation": "Cette intégration permet de <strong>référencer des artéfacts/tickets de Tuleap</strong> au sein d'un commit ou une Merge Request GitLab.",
+      "example_1_link_begin": "Une vidéo de présentation est disponible {0}.",
+      "example_1_link_end": "ici",
+      "example_2_title": "Mise en place de <strong>SAFe</strong> <i>(Scaled Agile Framework)</i> au sein de Tuleap",
+      "example_2_explanation": "Ce plugin permet d'utiliser SAFe au sein de Tuleap et ainsi gérer des <i>Programs</i>, <i>Programs Iterations</i>, <i>Iterations</i>, et <i>Teams</i> simplement.",
+      "example_2_link_begin": "Vous pouvez trouver plus d'information sur SAFe, {0}.",
+      "example_2_link_end": "ici",
+      "languages": "<strong>Langages utilisés</strong> : PHP, Vue.Js, TypeScript/JavaScript, Prototype, Vanilla.Js, Mustache, PHPUnit, Jest, Mock, Cypress",
+      "tools": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Nix, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, Planning poker)",
       "source_code_link_begin": "Tuleap étant Open Source, sur {0} vous trouverez mes differents travaux effectués.",
       "source_code_link_end": "GitHub"
     },
-    "enalean_intership_master": {
-      "entreprise": "Enalean",
+    "enalean_work_study_master": {
+      "enterprise": "Enalean",
       "localisation": "Crolles (38)",
       "title": "Alternance (1 an) - Création d'un widget pour améliorer l'utilisation des tableaux de bords",
-      "summary": "Ce widget, <i>nommé Project Milestones</i>, résume les differents Milestones en cours de développement avec un design mettant en valeur les KPIs de la méthode Agile Scrum (Effort Restant, Durée restante, Effort Initial, ...) et ainsi améliorer la prise de décision en tant que P.O ou Manager. Enfin, j'ai créé 2 graphes (BurnDown et BurnUp) en D3.js.",
-      "technique": "Ce widget fut développé en Vue.Js et PHP. Durant cette alternance, j'ai eu comme mission supplémentaire l'utilisation et l'intégration de TypeScript au sein de Tuleap au lieu de JavaScript. Enfin, j'ai créé et améliorer les differentes routes de l'API Rest.",
-      "source_code_link_begin": "{0} vous trouverez le code source de ce plugin.",
+      "summary": "Le widget résume les differents <i>Milestones</i> en cours de développement avec un design mettant en valeur les <strong>KPIs de la méthode Agile Scrum</strong> (Effort Restant, Durée restante, Effort Initial, etc.). Enfin, j'ai utilisé <strong>D3.js</strong> pour la création de 2 graphes (BurnDown et BurnUp).",
+      "summary_technical": "Durant cette alternance, j'ai eu comme mission supplémentaire l'utilisation et l'<strong>intégration de TypeScript</strong> au sein de Tuleap au lieu de JavaScript. Enfin, j'ai créé et améliorer les differentes routes de l'API Rest.",
+      "source_code_link_begin": "{0} vous trouverez mon travail effectué.",
       "source_code_link_end": "Ici",
-      "languages": "<strong>Langages utilisés</strong>: PHP, Vue.Js, TypeScript, D3.js, PHPUnit, Jest, Cypress",
-      "tools": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, ...)"
+      "languages": "<strong>Langages utilisés</strong> : PHP, Vue.Js, TypeScript, D3.js, PHPUnit, Jest, Cypress",
+      "tools": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros)"
     },
-    "enalean_intership_licence": {
-      "entreprise": "Enalean",
+    "enalean_internship_licence": {
+      "enterprise": "Enalean",
       "localisation": "Crolles (38)",
       "title": "Stage (3 mois) - Développement d'un automate permettant la synchronisation de 2 instances de Tuleap",
-      "summary": "Ce stage avait pour but de démontrer la faisabilité technique de pouvoir échanger automatiquement des informations entre 2 instances de Tuleap. Par exemple, la réplication de tickets/d'artefact d'une instance à une autre automatiquement.",
-      "technique": "Cet automate fut développé entièrement en PHP. Lorsqu'un ticket/artefact est créé ou mis à jour sur une instance de Tuleap, un webhook est appelé sur la seconde instance avec une payload contenant les informations necessaires, un fichier XML est alors généré automatiquement avec ces mêmes informations, et est ensuite importé au sein de la seconde instance de Tuleap.",
-      "languages": "<strong>Langages utilisés</strong>: PHP, PHPUnit",
-      "tools": "<strong>Outils utilisés</strong> : NPM, Docker, Gerrit, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, ...)"
+      "summary": "Durant mon M1 MIAGE, j'ai effectué un stage au sein d'Enalean qui avait pour but de créer un <strong>automate</strong> pour échanger automatiquement des informations entre 2 instances de Tuleap. Par exemple, la <strong>réplication</strong> de tickets/d'artéfacts d'une instance à une autre automatiquement.",
+      "summary_technical": "L'automate fonctionne grâce à des <strong>webhooks</strong> envoyés automatiquement lors de la création/mise à jour d'un artéfact. La seconde instance reçoit une <strong>payload</strong> contenant les informations de l'artéfact, un <strong>fichier XML</strong> est alors généré automatiquement avec ces mêmes informations, et est ensuite importé au sein de la seconde instance de Tuleap.",
+      "languages": "<strong>Langages utilisés</strong> : PHP, PHPUnit, XML",
+      "tools": "<strong>Outils utilisés</strong> : NPM, Docker,Gerrit, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros)"
     },
     "other_experiences": {
       "localisation": "Chambéry (73)",
       "title": "Autres experiences (1 an)",
-      "summary": "Après l'obentention de mon baccalauréat, j'ai travaillé durant une année. Par exemple j'ai travaillé en intérim, vendangeur, technicien de surface, agent de quai... Cette année m'a permis de réfléchir à quelles domaines d'études entreprise pour la rentrée suivante."
+      "summary": "Après l'obentention de mon baccalauréat, j'ai travaillé durant une année. J'ai effectué different postes, comme <strong>technicien information</strong>, <strong>vendangeur</strong>, <strong>technicien de surface</strong> ou encore <strong>agent de quai<strong>."
     }
   }
 }
