@@ -64,6 +64,7 @@
         PhSuitcase,
         PhGraduationCap,
         PhMartini,
+        PhSmileyXEyes,
     } from 'phosphor-vue';
 
     @Options({
@@ -75,6 +76,7 @@
             PhSuitcase,
             PhGraduationCap,
             PhMartini,
+            PhSmileyXEyes,
         },
     })
     export default class BurgerMenu extends Vue {
@@ -103,6 +105,12 @@
                     id: 'projects',
                     componentName: 'PhMartini',
                     path: '/projects',
+                },
+                {
+                    name: this.$t('menu.about_me'),
+                    id: 'about',
+                    componentName: 'PhSmileyXEyes',
+                    path: '/about',
                 },
             ];
         }

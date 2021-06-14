@@ -6,7 +6,8 @@
     "home": "Accueil",
     "experiences": "Expériences",
     "projects": "Projets",
-    "education": "Formation"
+    "education": "Formation",
+    "about_me": "À propos de moi"
   },
   "home": {
     "presentation_title": "Ingénieur Développeur Web",

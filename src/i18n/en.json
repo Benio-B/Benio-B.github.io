@@ -6,7 +6,8 @@
     "home": "Home",
     "experiences": "Work Experiences",
     "projects": "Projects",
-    "education": "Education"
+    "education": "Education",
+    "about_me": "About me",
   },
   "home": {
     "presentation_title": "Web Developer Engineer",
