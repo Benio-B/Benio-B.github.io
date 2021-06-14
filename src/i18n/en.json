@@ -1,5 +1,5 @@
 {
-  "switch_language": "Mettre en {language}",
+  "switch_language": "Switch to {language}",
   "close": "Close",
   "send_mail": "Send a mail",
   "menu": {
@@ -26,7 +26,7 @@
       "localisation": "Crolles, France",
       "title": "Web Developer Engineer",
       "date_end": "Now",
-      "summary": "Into EnaleanR&D team, I take care of the development of the Front-End and Back-End parts of Tuleap.",
+      "summary": "Into Enalean R&D team, I take care of the development of the Front-End and Back-End parts of Tuleap.",
       "summary_technical": "On a daily basis, I work on:",
       "summary_example_1": "<strong>Integrations of models </strong><i>(Vue.Js + TypeScript)</i>",
       "summary_example_2": "Improvement and maintenance of <strong>Rest API</strong> <i>(PHP)</i>",
