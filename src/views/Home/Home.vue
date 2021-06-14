@@ -1,6 +1,6 @@
 <template>
     <div class="title-view">
-        <h1>
+        <div>
             <div class="home-presentation-title-container">
                 {{ $t('home.presentation_title') }}
                 <div>
@@ -9,14 +9,13 @@
                         ref="titleCompanyNameLink"
                         class="home-presentation-title-company-name"
                         href="https://www.enalean.com/"
-                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         {{ $t('home.presentation_title_company_name') }}
                     </a>
                 </div>
             </div>
-        </h1>
+        </div>
         <div class="home-presentation-sentence">
             {{ $t('home.presentation_name') }}
         </div>

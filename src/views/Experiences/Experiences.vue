@@ -1,8 +1,6 @@
 <template>
-    <h1>
-        <div class="home-presentation-title-container">
-            {{ $t('experiences.title') }}
-        </div>
+    <h1 class="home-presentation-title-container">
+        {{ $t('experiences.title') }}
     </h1>
     <experiences-displayer />
 </template>
