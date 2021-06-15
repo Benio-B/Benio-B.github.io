@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: row;
     border-radius: 50%;
-    will-change: height;
-    will-change: width;
     transition-duration: 500ms;
     background: $menu_background_color;
 }
@@ -118,7 +116,6 @@
     font-size: 2em;
     margin: 0 0 $margin-little 0;
     width: max-content;
-    width: 101%;
     text-align: center;
     letter-spacing: 0;
 }
