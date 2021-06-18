@@ -15,7 +15,7 @@
     "presentation_title_company_name": "Enalean",
     "presentation_name": "Hi 👋! My name is Benjamin Bouillot, a french web developer at Grenoble, France.",
     "presentation_other": "Here there are my different professional experiences, and some personal projects.",
-    "presentation_final": "Development is my passion since years, that why I have a Master's Degree in Development and Management (MIAGE) at UGA in 2020.",
+    "presentation_final": "Development is my passion since years, that why I have a Master's Degree in Development and Management (MIAGE) at UGA (Grenoble, France) in 2020.",
     "presentation_cv": "You can download my resume (french version only):",
     "presentation_cv_download": "here!"
   },
@@ -28,7 +28,7 @@
       "date_end": "Now",
       "summary": "Into Enalean R&D team, I take care of the development of the Front-End and Back-End parts of Tuleap.",
       "summary_technical": "On a daily basis, I work on:",
-      "summary_example_1": "<strong>Integrations of models </strong><i>(Vue.Js + TypeScript)</i>",
+      "summary_example_1": "<strong>Integrations of mock-ups </strong><i>(Vue.Js + TypeScript)</i>",
       "summary_example_2": "Improvement and maintenance of <strong>Rest API</strong> <i>(PHP)</i>",
       "summary_example_3": "Writing <strong>Unit</strong> tests, <strong>Integration</strong> tests, <strong>End-to-End</strong> tests and <strong>Validation</strong> Tests <i>(PHPUnit, Jest, Cypress)</i>",
       "example_title": "During this experience, I worked on different missions:",
@@ -49,7 +49,7 @@
       "enterprise": "Enalean",
       "localisation": "Crolles, France",
       "title": "Work-Study program (1 year) - Create widget to improve Tuleap dashboard",
-      "summary": "This widget summarizes <i>Milestones</i> in development with with a design highlighting the <strong>KPIs of the Agile Scrum method</strong> (Remaining Effort, Remaining Time, Initial Effort, etc.). I used <strong>D3.js</strong> to create 2 graphs (BurnDown and BurnUp) too.",
+      "summary": "This widget summarizes <i>Milestones</i> in development with a design highlighting the <strong>KPIs of the Agile Scrum method</strong> (Remaining Effort, Remaining Time, Initial Effort, etc.). I used <strong>D3.js</strong> to create 2 graphs (BurnDown and BurnUp) too.",
       "summary_technical": "During this year, I has an additional mission to use and <strong>integrate TypeScript</strong> into Tuleap instead of JavaScript. Finally, I created and improved some routes of Rest API.",
       "source_code_link_begin": "{0} there is my work about the widget.",
       "source_code_link_end": "Here",
@@ -61,14 +61,14 @@
       "localisation": "Crolles, France",
       "title": "Internship (3 months) - Development of an automation allowing the synchronization of 2 instances of Tuleap",
       "summary": "This internship's goal was to demonstrate the possibility of synchronize 2 Tuleap's instances automatically. For example, <strong>replication of issues/artifacts</strong> from one instance to another automatically.",
-      "summary_technical": "When an issue/artifact is created or updated in one Tuleap's instance, then a <strong>webhook</strong> is sent to another Tuleap's instance with a payload containing all necessary information, afterward a <strong>XML file</strong> is automatically generated with these information and it is imported in the Tuleap's instance to replicate the issue/artifact.",
+      "summary_technical": "When an issue/artifact is created or updated in one Tuleap's instance, then a <strong>webhook</strong> is sent to another Tuleap's instance with a payload containing all necessary information, afterward a <strong>XML file</strong> is automatically generated with these information and it is imported in the second Tuleap's instance to replicate the issue/artifact.",
       "languages": "<strong>Languages used</strong>: PHP, PHPUnit, XML",
       "tools": "<strong>Tools used</strong>: NPM, Docker,Gerrit, Jenkins, Webpack, Scrum (Daily meeting, Code review, Pair Programming, Sprint Retrospective)"
     },
     "other_experiences": {
       "localisation": "Chambéry, France",
       "title": "Others works experiences (1 year)",
-      "summary": "When I got my High school Degree, I worked during 1 year before continue my studies. For example I worked like cleaner, grapes picker, dock agent."
+      "summary": "When I got my High School Degree, I worked during 1 year before continue my studies. For example, I worked like cleaner, grapes picker, dock agent."
     }
   }
 }
