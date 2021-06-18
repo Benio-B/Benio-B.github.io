@@ -46,7 +46,7 @@
                 },
                 {
                     componentName: 'PhLinkedinLogo',
-                    link: 'https://www.linkedin.com/in/benjamin-bouillot',
+                    link: 'https://www.linkedin.com/in/b-bouillot',
                     linkLabel: 'Linkedin',
                 },
                 {
