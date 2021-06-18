@@ -27,7 +27,7 @@
         </div>
         <div class="home-presentation-resume-container">
             {{ $t('home.presentation_cv') }}
-            <a href="/assets/Benjamin_Bouillot_CV.pdf">
+            <a href="/assets/Benjamin_Bouillot_CV_FR.pdf">
                 {{ $t('home.presentation_cv_download') }}
             </a>
         </div>
