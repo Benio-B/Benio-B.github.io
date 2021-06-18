@@ -27,7 +27,7 @@
         </div>
         <div class="home-presentation-resume-container">
             {{ $t('home.presentation_cv') }}
-            <a href="/assets/Benjamin_Bouillot_CV_FR.pdf">
+            <a v-bind:href="resume_url">
                 {{ $t('home.presentation_cv_download') }}
             </a>
         </div>
@@ -70,6 +70,13 @@
                 }
                 this.mouseIsLeaved = true;
             });
+        }
+
+        get resume_url(): string {
+            if (this.$i18n.locale.toLowerCase() === 'fr') {
+                return '/assets/Benjamin_Bouillot_CV_FR.pdf';
+            }
+            return '/assets/Benjamin_Bouillot_CV_EN.pdf';
         }
     }
 </script>
