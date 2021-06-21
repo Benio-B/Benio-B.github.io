@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $primary_color: #f8f9fa;
 $second_color: #adb5bd;
 $primary_color_text: #212529;
@@ -11,7 +13,7 @@ $selector_item_selected: black;
 $selector_item_not_selected: white;
 $selector_font_size: 16px;
 $selector_width: 60px;
-$selector_switch_width: $selector_width/2;
+$selector_switch_width: math.div($selector_width, 2);
 $selector_height: 30px;
 
 $margin-ants: 5px;

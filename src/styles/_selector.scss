@@ -13,34 +13,33 @@ $transition: cubic-bezier(0.86, 0, 0.07, 1);
 
 $can-toggle-offset: 2px;
 
-.selector-language-label {
-    .selector-language-switch {
-        transition: background-color 0.3s $transition;
-        background: $menu_background_color;
-        height: $selector_height;
+.selector-language-switch {
+    display: block;
+    transition: background-color 0.3s $transition;
+    background: $menu_background_color;
+    height: $selector_height;
+    border-radius: $selector_height;
+    width: $selector_width;
+
+    &:before {
+        color: $selector_item_not_selected;
+        font-weight: 900;
+        left: $selector_switch_width;
+        font-size: $selector_font_size;
+        line-height: $selector_height;
+        width: $selector_switch_width;
+    }
+
+    &:after {
+        -webkit-transition: -webkit-transform 0.3s $transition;
+        transition: transform 0.3s $transition;
+        color: $selector_item_selected;
+        top: $can-toggle-offset;
+        left: $can-toggle-offset;
         border-radius: $selector_height;
-        width: $selector_width;
-
-        &:before {
-            color: $selector_item_not_selected;
-            font-weight: 900;
-            left: $selector_switch_width;
-            font-size: $selector_font_size;
-            line-height: $selector_height;
-            width: $selector_switch_width;
-        }
-
-        &:after {
-            -webkit-transition: -webkit-transform 0.3s $transition;
-            transition: transform 0.3s $transition;
-            color: $selector_item_selected;
-            top: $can-toggle-offset;
-            left: $can-toggle-offset;
-            border-radius: $selector_height;
-            width: $selector_switch_width - $can-toggle-offset;
-            line-height: $selector_height - ($can-toggle-offset * 2);
-            font-size: $selector_font_size;
-        }
+        width: $selector_switch_width - $can-toggle-offset;
+        line-height: $selector_height - ($can-toggle-offset * 2);
+        font-size: $selector_font_size;
     }
 }
 
@@ -57,7 +56,7 @@ $can-toggle-offset: 2px;
         top: 0;
         left: 0;
 
-        &:checked ~ .selector-language-label .selector-language-switch {
+        &:checked ~ .selector-language-switch {
             &:before {
                 content: attr(data-unchecked);
                 left: 0;
@@ -75,7 +74,7 @@ $can-toggle-offset: 2px;
         }
     }
 
-    .selector-language-label .selector-language-switch {
+    .selector-language-switch {
         position: relative;
 
         &:before {

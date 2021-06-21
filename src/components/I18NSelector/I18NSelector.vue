@@ -14,13 +14,12 @@
                     $i18n.locale.toLowerCase()
                 "
             />
-            <label for="selector-language" class="selector-language-label">
-                <div
-                    class="selector-language-switch"
-                    v-bind:data-checked="getLocalesToDisplay()[0]"
-                    v-bind:data-unchecked="getLocalesToDisplay()[1]"
-                />
-            </label>
+            <label
+                for="selector-language"
+                class="selector-language-switch"
+                v-bind:data-checked="getLocalesToDisplay()[0]"
+                v-bind:data-unchecked="getLocalesToDisplay()[1]"
+            />
         </div>
     </div>
 </template>
@@ -29,6 +28,7 @@
     import { AvailableLocales, getLongLocale } from '@/i18n/locales';
     import { Vue } from 'vue-class-component';
     import { Mutation } from 's-vuex-class';
+    import { Locale } from 'vue-i18n';
 
     export default class Experiences extends Vue {
         @Mutation
@@ -40,7 +40,7 @@
             }
 
             const newLanguage = Object.values(this.$i18n.availableLocales).find(
-                (l) => l !== this.$i18n.locale
+                (locale: Locale) => locale !== this.$i18n.locale
             );
             if (!newLanguage) {
                 throw Error('Bad new language');
@@ -56,7 +56,7 @@
         getLongLocale(): string {
             const notSelectedLocale = Object.values(
                 this.$i18n.availableLocales
-            ).find((l) => l !== this.$i18n.locale);
+            ).find((locale: Locale) => locale !== this.$i18n.locale);
 
             if (!notSelectedLocale) {
                 throw Error('Bad not selected language');
