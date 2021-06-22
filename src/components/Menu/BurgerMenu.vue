@@ -34,7 +34,7 @@
                             v-on:on-click-item="onClickItem"
                         >
                             <component
-                                v-bind:is="item.componentName"
+                                v-bind:is="item.component_name"
                                 class="menu-item-icon"
                             ></component>
                         </burger-menu-item>
@@ -85,31 +85,31 @@
                 {
                     name: this.$t('menu.home'),
                     id: 'home',
-                    componentName: 'PhHouse',
+                    component_name: 'PhHouse',
                     path: '/',
                 },
                 {
                     name: this.$t('menu.experiences'),
                     id: 'experiences',
-                    componentName: 'PhSuitcase',
+                    component_name: 'PhSuitcase',
                     path: '/experiences',
                 },
                 {
                     name: this.$t('menu.education'),
                     id: 'education',
-                    componentName: 'PhGraduationCap',
+                    component_name: 'PhGraduationCap',
                     path: '/education',
                 },
                 {
                     name: this.$t('menu.projects'),
                     id: 'projects',
-                    componentName: 'PhMartini',
+                    component_name: 'PhMartini',
                     path: '/projects',
                 },
                 {
                     name: this.$t('menu.about_me'),
                     id: 'about',
-                    componentName: 'PhSmileyXEyes',
+                    component_name: 'PhSmileyXEyes',
                     path: '/about',
                 },
             ];

@@ -2,17 +2,17 @@
     <div class="footer-title-icons-container">
         <div
             v-for="item in itemsIconsLink"
-            v-bind:key="item.linkLabel"
+            v-bind:key="item.link_label"
             class="footer-title-icon-container"
         >
             <a
                 v-bind:href="item.link"
-                v-bind:aria-label="item.linkLabel"
+                v-bind:aria-label="item.link_label"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <component
-                    v-bind:is="item.componentName"
+                    v-bind:is="item.component_name"
                     class="footer-title-icon"
                     v-bind:size="50"
                     weight="bold"
@@ -40,19 +40,19 @@
         get itemsIconsLink(): ItemIconLink[] {
             return [
                 {
-                    componentName: 'PhGithubLogo',
+                    component_name: 'PhGithubLogo',
                     link: 'https://github.com/Benio-B',
-                    linkLabel: 'GitHub',
+                    link_label: 'GitHub',
                 },
                 {
-                    componentName: 'PhLinkedinLogo',
+                    component_name: 'PhLinkedinLogo',
                     link: 'https://www.linkedin.com/in/b-bouillot',
-                    linkLabel: 'Linkedin',
+                    link_label: 'Linkedin',
                 },
                 {
-                    componentName: 'PhAt',
+                    component_name: 'PhAt',
                     link: 'mailto:benjamin.bouillot@live.fr',
-                    linkLabel: this.$t('send_mail'),
+                    link_label: this.$t('send_mail'),
                 },
             ];
         }

@@ -1,14 +1,14 @@
 export interface Item {
     name: string;
     id: string;
-    componentName: string;
+    component_name: string;
     path: string;
 }
 
 export interface ItemIconLink {
-    componentName: string;
+    component_name: string;
     link: string;
-    linkLabel: string;
+    link_label: string;
 }
 
 export type IExperience =
