@@ -20,10 +20,8 @@ const i18n = createI18n({
 
 const app = createApp(App);
 
-const is_production = process.env.NODE_ENV === 'production';
-
 app.use(i18n);
-app.use(getStore(is_production));
+app.use(getStore(import.meta.env.PROD));
 app.use(router);
 app.component('ph-house', PhHouse);
 app.component('ph-suitcase', PhSuitcase);

@@ -79,7 +79,7 @@
             PhSmileyXEyes,
         },
     })
-    export default class BurgerMenu extends Vue {
+    class BurgerMenu extends Vue {
         get items(): Item[] {
             return [
                 {
@@ -157,4 +157,6 @@
             window.removeEventListener('scroll', this.noScroll);
         }
     }
+
+    export default BurgerMenu;
 </script>

@@ -29,8 +29,8 @@ $font-size-title: 3rem;
 
 @font-face {
     font-family: 'Space Grotesk';
-    src: url('~@/styles/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-        url('~@/styles/fonts/SpaceGrotesk-Light.woff') format('woff');
+    src: url('@/styles/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('@/styles/fonts/SpaceGrotesk-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;

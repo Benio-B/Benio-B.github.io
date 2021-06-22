@@ -2,7 +2,7 @@
     <div class="footer-title-icons-container">
         <div
             v-for="item in itemsIconsLink"
-            v-bind:key="item.iconName"
+            v-bind:key="item.linkLabel"
             class="footer-title-icon-container"
         >
             <a
@@ -36,7 +36,7 @@
             PhLinkedinLogo,
         },
     })
-    export default class FooterIcons extends Vue {
+    class FooterIcons extends Vue {
         get itemsIconsLink(): ItemIconLink[] {
             return [
                 {
@@ -57,4 +57,6 @@
             ];
         }
     }
+
+    export default FooterIcons;
 </script>

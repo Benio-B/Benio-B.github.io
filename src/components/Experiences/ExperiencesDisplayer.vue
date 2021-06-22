@@ -14,7 +14,7 @@
     import ExperienceDisplayer from './ExperienceDisplayer.vue';
 
     @Options({ components: { ExperienceDisplayer } })
-    export default class ExperiencesDisplayer extends Vue {
+    class ExperiencesDisplayer extends Vue {
         get experiences(): IExperience[] {
             return [
                 {
@@ -156,4 +156,6 @@
             ];
         }
     }
+
+    export default ExperiencesDisplayer;
 </script>

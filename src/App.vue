@@ -26,7 +26,7 @@
             FooterIcons,
         },
     })
-    export default class App extends Vue {
+    class App extends Vue {
         menuIsDisplaying = false;
 
         @State
@@ -40,8 +40,10 @@
             this.menuIsDisplaying = false;
         }
     }
+
+    export default App;
 </script>
 
 <style lang="scss">
-    @import '@/styles/_main.scss';
+    @use "./styles/_main.scss";
 </style>

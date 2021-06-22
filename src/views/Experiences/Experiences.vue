@@ -10,5 +10,7 @@
     import ExperiencesDisplayer from '@/components/Experiences/ExperiencesDisplayer.vue';
 
     @Options({ components: { ExperiencesDisplayer } })
-    export default class Experiences extends Vue {}
+    class Experiences extends Vue {}
+
+    export default Experiences;
 </script>
