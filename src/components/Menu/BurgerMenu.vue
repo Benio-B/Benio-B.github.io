@@ -14,11 +14,7 @@
             class="corner-menu-container-animated"
         >
             <div class="corner-menu-icon">
-                <ph-list
-                    class="menu-burger-icon"
-                    v-bind:size="25"
-                    weight="bold"
-                />
+                <i class="menu-burger-icon las la-2x la-bars"></i>
             </div>
         </div>
         <div v-show="showListMenuItems" class="list-menu-items-container">
@@ -33,10 +29,6 @@
                             v-bind:item="item"
                             v-on:on-click-item="onClickItem"
                         >
-                            <component
-                                v-bind:is="item.component_name"
-                                class="menu-item-icon"
-                            ></component>
                         </burger-menu-item>
                     </li>
                 </ul>
@@ -47,7 +39,7 @@
                 ref="closeMenuItemsIcon"
                 v-bind:aria-label="$t('close')"
             >
-                <ph-x v-bind:size="30" weight="bold" />
+                <i class="las la-2x la-times"></i>
             </div>
         </div>
     </div>
@@ -57,26 +49,10 @@
     import { Options, Vue } from 'vue-class-component';
     import BurgerMenuItem from './BurgerMenuItem.vue';
     import { Item } from '@/type';
-    import {
-        PhList,
-        PhX,
-        PhHouse,
-        PhSuitcase,
-        PhGraduationCap,
-        PhMartini,
-        PhSmileyXEyes,
-    } from 'phosphor-vue';
 
     @Options({
         components: {
             BurgerMenuItem,
-            PhList,
-            PhX,
-            PhHouse,
-            PhSuitcase,
-            PhGraduationCap,
-            PhMartini,
-            PhSmileyXEyes,
         },
     })
     class BurgerMenu extends Vue {
@@ -85,31 +61,31 @@
                 {
                     name: this.$t('menu.home'),
                     id: 'home',
-                    component_name: 'PhHouse',
+                    classes: 'las la-home',
                     path: '/',
                 },
                 {
                     name: this.$t('menu.experiences'),
                     id: 'experiences',
-                    component_name: 'PhSuitcase',
+                    classes: 'las la-suitcase',
                     path: '/experiences',
                 },
                 {
                     name: this.$t('menu.education'),
                     id: 'education',
-                    component_name: 'PhGraduationCap',
+                    classes: 'las la-graduation-cap',
                     path: '/education',
                 },
                 {
                     name: this.$t('menu.projects'),
                     id: 'projects',
-                    component_name: 'PhMartini',
+                    classes: 'las la-cocktail',
                     path: '/projects',
                 },
                 {
                     name: this.$t('menu.about_me'),
                     id: 'about',
-                    component_name: 'PhSmileyXEyes',
+                    classes: 'las la-dizzy',
                     path: '/about',
                 },
             ];
