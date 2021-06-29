@@ -18,7 +18,10 @@ export default defineConfig({
             },
         ],
     },
+    define: {
+        __INTLIFY_PROD_DEVTOOLS__: false,
+    },
     build: {
-        chunkSizeWarningLimit: 700, // Default is 500
+        chunkSizeWarningLimit: 500,
     },
 });
