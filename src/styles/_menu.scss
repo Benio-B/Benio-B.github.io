@@ -5,7 +5,7 @@
     flex-direction: row;
     border-radius: 50%;
     transition-duration: 500ms;
-    background: $menu_background_color;
+    background: $menu-background-color;
 }
 
 .menu-container.menu-is-closed {
@@ -39,7 +39,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    color: $menu_item_color;
+    color: $menu-item-color;
 }
 
 .menu-is-opened .corner-menu-icon {
@@ -57,7 +57,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: $menu_background_color;
+    background-color: $menu-background-color;
     position: absolute;
 }
 
@@ -94,7 +94,7 @@
     ul li {
         list-style: none;
 
-        color: $menu_item_color;
+        color: $menu-item-color;
         cursor: pointer;
         font-size: 19px;
         font-weight: 400;
@@ -127,7 +127,7 @@
     top: 0;
     animation: keyframe-show-menu 500ms both;
     animation-iteration-count: 1;
-    color: $menu_item_color;
+    color: $menu-item-color;
 }
 
 .menu-item-container:hover,
@@ -147,7 +147,7 @@
 
 .menu-item-container:hover:after,
 .menu-item-container:hover:before {
-    border-color: $menu_item_color;
+    border-color: $menu-item-color;
     transition: width 250ms ease;
     width: 100%;
 }
@@ -159,7 +159,7 @@
 }
 
 .menu-item-link {
-    color: $menu_item_color;
+    color: $menu-item-color;
     text-decoration: none;
 }
 

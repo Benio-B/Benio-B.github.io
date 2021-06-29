@@ -16,7 +16,7 @@ body {
 #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: $primary_color_text;
+    color: $primary-color-text;
 }
 
 .main-page {
@@ -29,7 +29,11 @@ body {
 }
 
 .footer-title-icon {
-    color: $primary_color_text;
+    color: $primary-color-text;
+
+    &:hover {
+        color: $color-link;
+    }
 }
 
 .footer-title-icon-container {

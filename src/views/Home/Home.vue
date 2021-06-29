@@ -27,7 +27,7 @@
         </div>
         <div class="home-presentation-resume-container">
             {{ $t('home.presentation_cv') }}
-            <a v-bind:href="resume_url">
+            <a v-bind:href="resume_url" class="home-presentation-resume-link">
                 {{ $t('home.presentation_cv_download') }}
             </a>
         </div>

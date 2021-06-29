@@ -1,20 +1,17 @@
-@use "sass:math";
+$primary-color-text: #212529;
+$headline-color-text: #094067;
+$color-link: #457B9D;
 
-$primary_color: #f8f9fa;
-$second_color: #adb5bd;
-$primary_color_text: #212529;
-$color-underline-text: rgb(14, 14, 160);
+$menu-item-color: #e9ecef;
+$menu-background-color: #14213d;
+$menu-color: #838a91; // #5f6c7b #90b4ce
 
-$menu_item_color: #e9ecef;
-$menu_background_color: #373c41;
-$menu_color: #838a91;
-
-$selector_item_selected: black;
-$selector_item_not_selected: white;
-$selector_font_size: 16px;
-$selector_width: 60px;
-$selector_switch_width: math.div($selector_width, 2);
-$selector_height: 30px;
+$selector-item-selected: $headline-color-text;
+$selector-item-not-selected: #fffffe;
+$selector-font-size: 16px;
+$selector-width: 60px;
+$selector-height: 30px;
+$selector-switch-width: $selector-height;
 
 $margin-ants: 5px;
 $margin-very-little: 10px;
