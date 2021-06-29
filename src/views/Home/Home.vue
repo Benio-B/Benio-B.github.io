@@ -7,7 +7,7 @@
                     {{ $t('home.presentation_title_company_name_at') }}
                     <a
                         ref="titleCompanyNameLink"
-                        class="home-presentation-title-company-name"
+                        class="link-text-handle"
                         href="https://www.enalean.com/"
                         rel="noopener noreferrer"
                     >
@@ -27,7 +27,11 @@
         </div>
         <div>
             {{ $t('home.presentation_cv') }}
-            <a v-bind:href="resume_url" class="home-presentation-resume-link">
+            <a
+                ref="resumeLink"
+                v-bind:href="resume_url"
+                class="link-text-handle link-text-handle-small"
+            >
                 {{ $t('home.presentation_cv_download') }}
             </a>
         </div>
@@ -36,11 +40,9 @@
 
 <script lang="ts">
     import { Vue } from 'vue-class-component';
+    import { handleLinkHover } from '@/scripts/link-hover-handler';
 
     export default class Home extends Vue {
-        private mouseIsLeaved = false;
-        private animationIsEnded = false;
-
         mounted(): void {
             const titleCompanyNameLink = this.$refs.titleCompanyNameLink;
 
@@ -48,28 +50,15 @@
                 throw Error('No titleCompanyNameLink refs');
             }
 
-            titleCompanyNameLink.addEventListener('mouseenter', () => {
-                this.mouseIsLeaved = false;
-                this.animationIsEnded = false;
-                titleCompanyNameLink.classList.remove('mouse-leave');
-                titleCompanyNameLink.classList.add('mouse-enter');
-            });
+            handleLinkHover(titleCompanyNameLink);
 
-            titleCompanyNameLink.addEventListener('transitionend', () => {
-                if (this.mouseIsLeaved) {
-                    titleCompanyNameLink.classList.add('mouse-leave');
-                    titleCompanyNameLink.classList.remove('mouse-enter');
-                }
-                this.animationIsEnded = true;
-            });
+            const resumeLink = this.$refs.resumeLink;
 
-            titleCompanyNameLink.addEventListener('mouseleave', () => {
-                if (this.animationIsEnded) {
-                    titleCompanyNameLink.classList.add('mouse-leave');
-                    titleCompanyNameLink.classList.remove('mouse-enter');
-                }
-                this.mouseIsLeaved = true;
-            });
+            if (!(resumeLink instanceof HTMLElement)) {
+                throw Error('No resumeLink refs');
+            }
+
+            handleLinkHover(resumeLink);
         }
 
         get resume_url(): string {

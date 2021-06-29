@@ -11,46 +11,6 @@
     margin: $margin-mastodonte $margin-medium $margin-big $margin-medium;
 }
 
-.home-presentation-title-company-name {
-    color: $color-link;
-    text-decoration: none;
-    padding: $margin-ants 0 0 0;
-    position: relative;
-
-    &:before,
-    &:after {
-        bottom: 3px;
-        content: '';
-        position: absolute;
-        width: 0px;
-        height: 5px;
-        transition: all 350ms ease-in-out;
-        background-color: $color-link;
-    }
-}
-
-.home-presentation-title-company-name.mouse-enter {
-    &:before,
-    &:after {
-        left: 0;
-        width: 100%;
-        opacity: 1;
-    }
-}
-
-.home-presentation-title-company-name.mouse-leave {
-    &:before,
-    &:after {
-        right: 0;
-        width: 0%;
-        opacity: 0;
-    }
-}
-
 .home-presentation-sentence {
     margin: $margin-medium;
-}
-
-.home-presentation-resume-link {
-    color: $color_link;
 }
