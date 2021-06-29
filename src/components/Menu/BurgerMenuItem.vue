@@ -6,7 +6,7 @@
             v-on:click.capture="$emit('on-click-item')"
             data-test="on-click-item"
         >
-            <slot />
+            <i v-bind:class="item.classes" class="menu-item-icon"></i>
             {{ item.name }}
         </router-link>
     </div>

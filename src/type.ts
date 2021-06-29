@@ -1,12 +1,12 @@
 export interface Item {
     name: string;
     id: string;
-    component_name: string;
+    classes: string;
     path: string;
 }
 
 export interface ItemIconLink {
-    component_name: string;
+    classes: string;
     link: string;
     link_label: string;
 }

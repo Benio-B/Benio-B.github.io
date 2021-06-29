@@ -8,11 +8,6 @@
     background: $menu_background_color;
 }
 
-.temp.temp-is-closed:hover {
-    animation: pulse-icon-burger 1.2s infinite;
-    animation-timing-function: linear;
-}
-
 .menu-container.menu-is-closed {
     width: 150px;
     height: 150px;
@@ -37,8 +32,7 @@
 
 .menu-burger-icon {
     cursor: pointer;
-    z-index: 4;
-    margin: $margin-medium;
+    margin: $margin-little;
 }
 
 .corner-menu-icon {
@@ -69,7 +63,7 @@
 
 .menu-is-closed .corner-menu-container-animated:hover {
     cursor: pointer;
-    animation: pulse-icon-burger 1.2s infinite;
+    animation: pulse-icon-burger 1s infinite;
     animation-timing-function: linear;
 }
 
@@ -122,8 +116,6 @@
 
 .menu-item-icon {
     margin: 2px 0 0 5px;
-    top: 5px;
-    position: relative;
 }
 
 .menu-close-icon {
