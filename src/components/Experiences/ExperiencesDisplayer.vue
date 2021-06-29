@@ -1,5 +1,5 @@
 <template>
-    <div class="experiences-container">
+    <div>
         <experience-displayer
             v-for="experience in experiences"
             v-bind:key="experience.title"

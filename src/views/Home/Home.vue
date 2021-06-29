@@ -25,7 +25,7 @@
         <div class="home-presentation-sentence">
             {{ $t('home.presentation_final') }}
         </div>
-        <div class="home-presentation-resume-container">
+        <div>
             {{ $t('home.presentation_cv') }}
             <a v-bind:href="resume_url" class="home-presentation-resume-link">
                 {{ $t('home.presentation_cv_download') }}

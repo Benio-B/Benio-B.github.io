@@ -1,26 +1,24 @@
 <template>
     <div class="selector-language-container">
-        <div class="can-toggle">
-            <input
-                id="selector-language"
-                type="checkbox"
-                class="selector-language-checkbox"
-                @change="updateLanguage($event)"
-                v-bind:aria-label="
-                    $t('switch_language', { language: getLongLocale() })
-                "
-                v-bind:checked="
-                    getLocalesToDisplay()[0].toLowerCase() ===
-                    $i18n.locale.toLowerCase()
-                "
-            />
-            <label
-                for="selector-language"
-                class="selector-language-switch"
-                v-bind:data-checked="getLocalesToDisplay()[0]"
-                v-bind:data-unchecked="getLocalesToDisplay()[1]"
-            />
-        </div>
+        <input
+            id="selector-language"
+            type="checkbox"
+            class="selector-language-checkbox"
+            @change="updateLanguage($event)"
+            v-bind:aria-label="
+                $t('switch_language', { language: getLongLocale() })
+            "
+            v-bind:checked="
+                getLocalesToDisplay()[0].toLowerCase() ===
+                $i18n.locale.toLowerCase()
+            "
+        />
+        <label
+            for="selector-language"
+            class="selector-language-switch"
+            v-bind:data-checked="getLocalesToDisplay()[0]"
+            v-bind:data-unchecked="getLocalesToDisplay()[1]"
+        />
     </div>
 </template>
 
