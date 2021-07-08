@@ -4,13 +4,13 @@ Here it's my portfolio's sources.
 
 You can go to [here](https://benio-b.github.io) to see the result.
 
-🚧 At the moment, the site is under construction. All pages are not created.
+🚧 At the moment, the site is under construction. Not all pages have been created yet.
 
 ## Stack
-This web site is build with [Vue 3](https://v3.vuejs.org/), [Sass](https://sass-lang.com/) and [TypeScript](https://www.typescriptlang.org/).
+This website is build with [Vue 3](https://v3.vuejs.org/), [Sass](https://sass-lang.com/) and [TypeScript](https://www.typescriptlang.org/).
 There is i18n with [Vue i18n](https://github.com/intlify/vue-i18n-next).
 
-Of course, there is [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to help me 😋!
+Of course, there is [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) and [Stylelint](https://stylelint.io/) to help me 😋!
 
 And [Jest](https://jestjs.io/) to test some dark part of the code 🧐.
 
@@ -32,8 +32,7 @@ npm run test:unit
 
 ### Lints and fixes files
 ```
-npm run lint:fix
-npm run prettier
+npm run lint:all
 ```
 
 ## Next features

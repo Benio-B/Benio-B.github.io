@@ -1,0 +1,78 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-prettier/recommended",
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "indentation": [
+      4
+    ],
+    "color-hex-length": [
+      "long"
+    ],
+    "color-named": [
+      "never",
+      {
+        "message": "Colors should be written in hexadecimal format (color-named)"
+      }
+    ],
+    "declaration-block-no-duplicate-properties": true,
+    "function-calc-no-unspaced-operator": true,
+    "max-nesting-depth": [
+      4
+    ],
+    "no-duplicate-selectors": true,
+    "no-eol-whitespace": true,
+    "number-leading-zero": [
+      "always"
+    ],
+    "selector-id-pattern": [
+      "^[a-z0-9\\-]+$",
+      {
+        "message": "Selector should be written in lowercase with hyphens (selector-id-pattern)"
+      }
+    ],
+    "selector-max-compound-selectors": [
+      5
+    ],
+    "selector-max-id": null,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute"
+        ]
+      }
+    ],
+    "unit-allowed-list": [
+      "em",
+      "rem",
+      "px",
+      "vh",
+      "vw",
+      "vmin",
+      "vmax",
+      "deg",
+      "grad",
+      "rad",
+      "turn",
+      "ms",
+      "s",
+      "%",
+      "fr"
+    ],
+    "function-parentheses-space-inside": "never-single-line",
+    "order/properties-alphabetical-order": null,
+    "scss/at-else-empty-line-before": [
+      "never"
+    ],
+    "scss/dollar-variable-colon-space-before": null,
+    "scss/operator-no-unspaced": true,
+    "prettier/prettier": [true, {"singleQuote": true, "tabWidth": 4}]
+  }
+}

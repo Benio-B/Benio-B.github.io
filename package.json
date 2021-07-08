@@ -8,14 +8,19 @@
     "build": "vite build --mode production",
     "test": "jest",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "eslint --quiet --ext .ts,.vue .",
-    "lint:fix": "eslint --fix --ext .ts,.vue .",
+    "eslint": "eslint --quiet --ext .ts,.vue .",
+    "eslint:fix": "eslint --fix --ext .ts,.vue .",
     "prettier": "prettier --write '**/*.vue' '**/*.ts' '**/*.scss' '!src/shims-vue.d.ts'",
+    "stylelint": "npx stylelint '**/*.scss'",
+    "stylelint:fix": "npx stylelint --fix '**/*.scss'",
+    "lint:all": "npm run eslint:fix && npm run prettier && npm run stylelint:fix",
     "deploy": "node deploy-gh-pages.js"
   },
   "dependencies": {
     "core-js": "^3.10.2",
     "s-vuex-class": "^0.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.19.0",
     "vue": "^3.0.11",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-i18n": "^9.1.6",
@@ -42,6 +47,10 @@
     "prettier": "^2.2.1",
     "rollup-plugin-visualizer": "^5.5.0",
     "sass": "^1.35.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
     "ts-jest": "^26.5.6",
     "typescript": "~3.9.3",
     "vite": "^2.3.8",
@@ -56,6 +65,9 @@
     "*.{js,jsx,vue,ts,tsx}": [
       "eslint --quiet",
       "prettier --write"
+    ],
+    "*.{scss,css}": [
+      "stylelint --fix"
     ]
   }
 }

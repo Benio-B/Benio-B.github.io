@@ -20,18 +20,23 @@ $can-toggle-offset: 2px;
     height: $selector-height;
     border-radius: $selector-height;
     width: $selector-width;
+    position: relative;
 
-    &:before {
+    &::before {
         color: $selector-item-not-selected;
         font-weight: 900;
         left: $selector-switch-width;
         font-size: $selector-font-size;
         line-height: $selector-height;
         width: $selector-switch-width;
+        content: attr(data-checked);
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        text-align: center;
     }
 
-    &:after {
-        -webkit-transition: -webkit-transform 0.3s $transition;
+    &::after {
         transition: transform 0.3s $transition;
         color: $selector-item-selected;
         top: $can-toggle-offset;
@@ -40,6 +45,13 @@ $can-toggle-offset: 2px;
         width: $selector-switch-width - $can-toggle-offset;
         line-height: $selector-height - ($can-toggle-offset * 2);
         font-size: $selector-font-size;
+        content: attr(data-unchecked);
+        position: absolute;
+        z-index: 5;
+        text-transform: uppercase;
+        text-align: center;
+        background: #ffffff;
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -50,41 +62,18 @@ $can-toggle-offset: 2px;
     left: 0;
 
     &:checked ~ .selector-language-switch {
-        &:before {
+        &::before {
             content: attr(data-unchecked);
             left: 0;
         }
 
-        &:after {
+        &::after {
             transform: translate3d(
-                $selector-width -
-                    ($selector-switch-width + $can-toggle-offset),
+                $selector-width - ($selector-switch-width + $can-toggle-offset),
                 0,
                 0
             );
             content: attr(data-checked);
         }
-    }
-}
-
-.selector-language-switch {
-    position: relative;
-
-    &:before {
-        content: attr(data-checked);
-        position: absolute;
-        top: 0;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    &:after {
-        content: attr(data-unchecked);
-        position: absolute;
-        z-index: 5;
-        text-transform: uppercase;
-        text-align: center;
-        background: white;
-        transform: translate3d(0, 0, 0);
     }
 }
