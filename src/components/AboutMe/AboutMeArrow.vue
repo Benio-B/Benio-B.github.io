@@ -1,0 +1,26 @@
+<template>
+    <svg width="64" height="9" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <line
+                id="svg_7"
+                y2="5"
+                x2="55"
+                y1="5"
+                x1="0.00053"
+                stroke-dasharray="7,5"
+                fill="none"
+                class="about-me-arrow-dotted"
+            />
+            <ellipse
+                ry="4"
+                rx="4"
+                id="svg_9"
+                cy="5"
+                cx="58"
+                stroke-dasharray="5,5"
+                stroke-width="0"
+                class="about-me-arrow-elipse"
+            />
+        </g>
+    </svg>
+</template>

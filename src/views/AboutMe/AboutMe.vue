@@ -1,9 +1,13 @@
 <template>
-    <div class="title-view">About Me page. Empty</div>
+    <about-me-displayer />
 </template>
 
 <script lang="ts">
-    import { Vue } from 'vue-class-component';
+    import AboutMeDisplayer from '../../components/AboutMe/AboutMeDisplayer.vue';
+    import { Options, Vue } from 'vue-class-component';
 
-    export default class AboutMe extends Vue {}
+    @Options({ components: { AboutMeDisplayer } })
+    class AboutMe extends Vue {}
+
+    export default AboutMe;
 </script>

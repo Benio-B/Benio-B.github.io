@@ -1,0 +1,76 @@
+.about-me-main-container {
+    text-align: center;
+}
+
+.about-me-subtitle {
+    font-weight: $font-weight-title;
+    font-size: $font-size-subtitle;
+}
+
+.about-me-container-timeline {
+    position: relative;
+    background: $background;
+    padding: 10px;
+}
+
+.about-me-container-timeline::before {
+    content: ' ';
+    left: 50%;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 6px;
+    height: 100%;
+    transform: translate(-50%);
+    background: $color-underline-text;
+    margin-left: -3px;
+}
+
+.container-alarm {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: max-content;
+    left: 87px;
+    position: relative;
+}
+
+.about-me-container-alarm-hour-arrow-round {
+    display: flex;
+}
+
+.about-me-container-alarm-hour-arrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+}
+
+.about-me-arrow-dotted {
+    stroke: $item-color-highlighted;
+}
+
+.about-me-arrow-elipse {
+    fill: $item-color-highlighted;
+}
+
+.about-me-container-alarm-round-grey {
+    padding: 10px;
+    background: $item-color-highlighted;
+    border-radius: 50%;
+    width: max-content;
+    height: max-content;
+}
+
+.about-me-container-alarm-round-white {
+    padding: 10px;
+    background: $background;
+    border-radius: 50%;
+    width: max-content;
+}
+
+.about-me-container-alarm-icon {
+    color: $item-color-highlighted;
+    font-size: 4.5rem;
+}
