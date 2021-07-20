@@ -1,10 +1,11 @@
 <template>
-    <nav aria-label="Menu" v-show="!is_production">
+    <nav aria-label="Menu" v-show="displayMenu">
         <burger-menu
             v-on:on-display-menu="onDisplayMenu"
             v-on:on-hide-menu="onHideMenu"
         />
     </nav>
+    <div v-if="is_production" ref="clickToShowMenu" class="to-show-menu" />
     <main v-show="!menuIsDisplaying"><router-view></router-view></main>
     <nav aria-label="Language" v-show="!menuIsDisplaying">
         <i-18-n-selector />
@@ -27,7 +28,12 @@
         },
     })
     class App extends Vue {
+        $refs!: {
+            clickToShowMenu: HTMLDivElement;
+        };
+
         menuIsDisplaying = false;
+        hasClick = false;
 
         @State
         private readonly is_production!: boolean;
@@ -38,6 +44,23 @@
 
         onHideMenu(): void {
             this.menuIsDisplaying = false;
+        }
+
+        get displayMenu(): boolean {
+            return !this.is_production || this.hasClick;
+        }
+
+        mounted(): void {
+            if (this.is_production) {
+                const element_to_click = this.$refs.clickToShowMenu;
+                let nb_click = 0;
+                element_to_click.addEventListener('click', () => {
+                    nb_click++;
+                    if (nb_click === 5) {
+                        this.hasClick = true;
+                    }
+                });
+            }
         }
     }
 
