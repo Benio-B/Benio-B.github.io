@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-    import { IExperience } from '@/type';
+    import type { IExperience } from '@/type';
     import { Options, Vue } from 'vue-class-component';
     import ExperienceDisplayer from './ExperienceDisplayer.vue';
 

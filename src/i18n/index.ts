@@ -2,7 +2,7 @@ import { AvailableLocales } from './locales';
 
 import en from './en.json';
 import fr from './fr.json';
-import { IntlDateTimeFormats } from 'vue-i18n';
+import type { IntlDateTimeFormats } from 'vue-i18n';
 
 export const messages = {
     [AvailableLocales.EN]: en,

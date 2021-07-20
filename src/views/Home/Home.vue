@@ -44,21 +44,21 @@
 
     export default class Home extends Vue {
         mounted(): void {
-            const titleCompanyNameLink = this.$refs.titleCompanyNameLink;
+            const title_company_name_link = this.$refs.titleCompanyNameLink;
 
-            if (!(titleCompanyNameLink instanceof HTMLElement)) {
+            if (!(title_company_name_link instanceof HTMLElement)) {
                 throw Error('No titleCompanyNameLink refs');
             }
 
-            handleLinkHover(titleCompanyNameLink);
+            handleLinkHover(title_company_name_link);
 
-            const resumeLink = this.$refs.resumeLink;
+            const resume_link = this.$refs.resumeLink;
 
-            if (!(resumeLink instanceof HTMLElement)) {
+            if (!(resume_link instanceof HTMLElement)) {
                 throw Error('No resumeLink refs');
             }
 
-            handleLinkHover(resumeLink);
+            handleLinkHover(resume_link);
         }
 
         get resume_url(): string {

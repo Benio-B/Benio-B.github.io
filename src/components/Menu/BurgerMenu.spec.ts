@@ -1,4 +1,5 @@
-import { MountingOptions, shallowMount } from '@vue/test-utils';
+import type { MountingOptions } from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
 import BurgerMenu from './BurgerMenu.vue';
 import BurgerMenuItem from './BurgerMenuItem.vue';
 

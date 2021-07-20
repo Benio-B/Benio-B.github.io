@@ -45,7 +45,7 @@
                         v-bind:keypath="experience.example_1_link_begin"
                     >
                         <a
-                            :href="experience.example_1_link"
+                            v-bind:href="experience.example_1_link"
                             target="_blank"
                             v-html="$t(experience.example_1_link_end)"
                         ></a>
@@ -61,7 +61,7 @@
                         v-bind:keypath="experience.example_2_link_begin"
                     >
                         <a
-                            :href="experience.example_2_link"
+                            v-bind:href="experience.example_2_link"
                             target="_blank"
                             v-html="$t(experience.example_2_link_end)"
                         ></a>
@@ -88,7 +88,7 @@
                 v-bind:keypath="experience.source_code_link_begin"
             >
                 <a
-                    :href="experience.source_code_link"
+                    v-bind:href="experience.source_code_link"
                     target="_blank"
                     v-html="$t(experience.source_code_link_end)"
                 ></a>
@@ -98,7 +98,7 @@
 </template>
 
 <script lang="ts">
-    import { IExperience } from '@/type';
+    import type { IExperience } from '@/type';
     import { Vue } from 'vue-class-component';
     import { Prop } from 'vue-property-decorator';
 

@@ -4,7 +4,7 @@
             id="selector-language"
             type="checkbox"
             class="selector-language-checkbox"
-            @change="updateLanguage($event)"
+            v-on:change="updateLanguage($event)"
             v-bind:aria-label="
                 $t('switch_language', { language: getLongLocale() })
             "
@@ -26,7 +26,7 @@
     import { AvailableLocales, getLongLocale } from '@/i18n/locales';
     import { Vue } from 'vue-class-component';
     import { Mutation } from 's-vuex-class';
-    import { Locale } from 'vue-i18n';
+    import type { Locale } from 'vue-i18n';
 
     export default class Experiences extends Vue {
         @Mutation
@@ -37,14 +37,14 @@
                 return;
             }
 
-            const newLanguage = Object.values(this.$i18n.availableLocales).find(
-                (locale: Locale) => locale !== this.$i18n.locale
-            );
-            if (!newLanguage) {
+            const new_language = Object.values(
+                this.$i18n.availableLocales
+            ).find((locale: Locale) => locale !== this.$i18n.locale);
+            if (!new_language) {
                 throw Error('Bad new language');
             }
-            this.$i18n.locale = newLanguage;
-            this.SET_LANGUAGE(newLanguage);
+            this.$i18n.locale = new_language;
+            this.SET_LANGUAGE(new_language);
         }
 
         getLocalesToDisplay(): string[] {
@@ -52,15 +52,15 @@
         }
 
         getLongLocale(): string {
-            const notSelectedLocale = Object.values(
+            const not_selected_locale = Object.values(
                 this.$i18n.availableLocales
             ).find((locale: Locale) => locale !== this.$i18n.locale);
 
-            if (!notSelectedLocale) {
+            if (!not_selected_locale) {
                 throw Error('Bad not selected language');
             }
 
-            return getLongLocale(notSelectedLocale);
+            return getLongLocale(not_selected_locale);
         }
     }
 </script>

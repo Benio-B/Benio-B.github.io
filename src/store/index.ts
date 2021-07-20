@@ -1,4 +1,5 @@
-import { createStore, Store } from 'vuex';
+import type { Store } from 'vuex';
+import { createStore } from 'vuex';
 import { defaultLocale } from '@/i18n';
 
 export interface State {

@@ -4,8 +4,8 @@
         data-test="menu-container"
         id="menu-container"
         v-bind:class="{
-            'menu-is-opened': showListMenuItems,
-            'menu-is-closed': !showListMenuItems,
+            'menu-is-opened': show_list_menu_items,
+            'menu-is-closed': !show_list_menu_items,
         }"
     >
         <div
@@ -17,19 +17,18 @@
                 <i class="menu-burger-icon las la-2x la-bars"></i>
             </div>
         </div>
-        <div v-show="showListMenuItems" class="list-menu-items-container">
+        <div v-show="show_list_menu_items" class="list-menu-items-container">
             <div class="list-menu-items">
                 <ul>
                     <li
                         v-for="item in items"
-                        :key="item.id"
+                        v-bind:key="item.id"
                         v-bind:data-test="`item-list-${item.id}`"
                     >
                         <burger-menu-item
                             v-bind:item="item"
                             v-on:on-click-item="onClickItem"
-                        >
-                        </burger-menu-item>
+                        />
                     </li>
                 </ul>
             </div>
@@ -48,7 +47,7 @@
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
     import BurgerMenuItem from './BurgerMenuItem.vue';
-    import { Item } from '@/type';
+    import type { Item } from '@/type';
 
     @Options({
         components: {
@@ -91,37 +90,37 @@
             ];
         }
 
-        private showListMenuItems = false;
+        private show_list_menu_items = false;
 
         noScroll(): void {
             window.scrollTo(0, 0);
         }
 
         mounted(): void {
-            const menuBurgerItemIcon = this.$refs.menuBurgerIcon;
+            const menu_burger_item_icon = this.$refs.menuBurgerIcon;
 
-            if (!(menuBurgerItemIcon instanceof HTMLElement)) {
+            if (!(menu_burger_item_icon instanceof HTMLElement)) {
                 throw Error('No menuBurgerItemIcon refs');
             }
 
-            menuBurgerItemIcon.addEventListener('click', () => {
+            menu_burger_item_icon.addEventListener('click', () => {
                 this.$emit('on-display-menu');
-                this.showListMenuItems = true;
+                this.show_list_menu_items = true;
                 window.addEventListener('scroll', this.noScroll);
             });
 
-            const closeMenuItemsIcon = this.$refs.closeMenuItemsIcon;
+            const close_menu_items_icon = this.$refs.closeMenuItemsIcon;
 
-            if (!(closeMenuItemsIcon instanceof HTMLElement)) {
+            if (!(close_menu_items_icon instanceof HTMLElement)) {
                 throw Error('No closeMenuItemsIcon refs');
             }
 
-            closeMenuItemsIcon.addEventListener('click', () => {
+            close_menu_items_icon.addEventListener('click', () => {
                 this.onClickItem();
             });
 
             document.addEventListener('keydown', (e) => {
-                if (this.showListMenuItems && e.key == 'Escape') {
+                if (this.show_list_menu_items && e.key === 'Escape') {
                     this.onClickItem();
                 }
             });
@@ -129,7 +128,7 @@
 
         onClickItem(): void {
             this.$emit('on-hide-menu');
-            this.showListMenuItems = false;
+            this.show_list_menu_items = false;
             window.removeEventListener('scroll', this.noScroll);
         }
     }

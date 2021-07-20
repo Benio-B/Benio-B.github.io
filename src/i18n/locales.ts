@@ -1,7 +1,10 @@
-export enum AvailableLocales {
-    EN = 'en',
-    FR = 'fr',
-}
+export const AvailableLocales = {
+    EN: 'en',
+    FR: 'fr',
+};
+
+type AvailableLocalesType =
+    typeof AvailableLocales[keyof typeof AvailableLocales];
 
 export const availableLocalesToDisplay = {
     [AvailableLocales.EN]: { language: 'English' },
@@ -16,6 +19,8 @@ export function getLongLocale(locale: string): string {
     return availableLocalesToDisplay[locale].language;
 }
 
-function isAvailableLocale(locale: string): locale is AvailableLocales {
-    return Object.values(AvailableLocales).includes(locale as AvailableLocales);
+function isAvailableLocale(locale: string): locale is AvailableLocalesType {
+    return Object.values(AvailableLocales).includes(
+        locale as AvailableLocalesType
+    );
 }

@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home/Home.vue';
 import Experiences from '@/views/Experiences/Experiences.vue';
 import Education from '@/views/Education/Education.vue';

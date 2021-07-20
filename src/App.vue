@@ -1,16 +1,18 @@
 <template>
-    <nav aria-label="Menu" v-show="displayMenu">
-        <burger-menu
-            v-on:on-display-menu="onDisplayMenu"
-            v-on:on-hide-menu="onHideMenu"
-        />
-    </nav>
-    <div v-if="is_production" ref="clickToShowMenu" class="to-show-menu" />
-    <main v-show="!menuIsDisplaying"><router-view></router-view></main>
-    <nav aria-label="Language" v-show="!menuIsDisplaying">
-        <i-18-n-selector />
-    </nav>
-    <footer v-show="!menuIsDisplaying"><footer-icons /></footer>
+    <div>
+        <nav aria-label="Menu" v-show="display_menu">
+            <burger-menu
+                v-on:on-display-menu="onDisplayMenu"
+                v-on:on-hide-menu="onHideMenu"
+            />
+        </nav>
+        <div v-if="is_production" ref="clickToShowMenu" class="to-show-menu" />
+        <main v-show="!menu_is_displaying"><router-view /></main>
+        <nav aria-label="Language" v-show="!menu_is_displaying">
+            <i-18-n-selector />
+        </nav>
+        <footer v-show="!menu_is_displaying"><footer-icons /></footer>
+    </div>
 </template>
 
 <script lang="ts">
@@ -32,22 +34,22 @@
             clickToShowMenu: HTMLDivElement;
         };
 
-        menuIsDisplaying = false;
-        hasClick = false;
+        menu_is_displaying = false;
+        has_click = false;
 
         @State
         private readonly is_production!: boolean;
 
         onDisplayMenu(): void {
-            this.menuIsDisplaying = true;
+            this.menu_is_displaying = true;
         }
 
         onHideMenu(): void {
-            this.menuIsDisplaying = false;
+            this.menu_is_displaying = false;
         }
 
-        get displayMenu(): boolean {
-            return !this.is_production || this.hasClick;
+        get display_menu(): boolean {
+            return !this.is_production || this.has_click;
         }
 
         mounted(): void {
@@ -57,7 +59,7 @@
                 element_to_click.addEventListener('click', () => {
                     nb_click++;
                     if (nb_click === 5) {
-                        this.hasClick = true;
+                        this.has_click = true;
                     }
                 });
             }

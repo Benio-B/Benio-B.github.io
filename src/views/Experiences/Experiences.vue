@@ -1,8 +1,10 @@
 <template>
-    <h1 class="home-presentation-title-container">
-        {{ $t('experiences.title') }}
-    </h1>
-    <experiences-displayer />
+    <div>
+        <h1 class="home-presentation-title-container">
+            {{ $t('experiences.title') }}
+        </h1>
+        <experiences-displayer />
+    </div>
 </template>
 
 <script lang="ts">
