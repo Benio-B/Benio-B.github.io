@@ -14,7 +14,7 @@
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint --fix '**/*.scss'",
     "lint:all": "npm run eslint:fix && npm run prettier && npm run stylelint:fix",
-    "deploy": "node deploy-gh-pages.js"
+    "deploy": "node --experimental-modules deploy-gh-pages.mjs"
   },
   "dependencies": {
     "core-js": "^3.19.3",
