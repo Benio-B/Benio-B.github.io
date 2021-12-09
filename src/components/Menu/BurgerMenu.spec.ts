@@ -6,7 +6,7 @@ import BurgerMenuItem from './BurgerMenuItem.vue';
 describe('BurgerMenu', () => {
     const $t = jest.fn();
     it('When BurgerMenu is created, Then showListMenuItems is false and user can open/close menu', async () => {
-        const wrapper = shallowMount(BurgerMenu, {
+        const wrapper = await shallowMount(BurgerMenu, {
             global: {
                 mocks: {
                     $t,
@@ -24,7 +24,7 @@ describe('BurgerMenu', () => {
             wrapper.find('[data-test=menu-container]').classes()
         ).not.toContain('menu-is-opened');
 
-        wrapper.find('[data-test=open-menu-burger]').trigger('click');
+        await wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
         expect(wrapper.emitted('on-display-menu')).toBeTruthy();
@@ -38,7 +38,7 @@ describe('BurgerMenu', () => {
             'menu-is-opened'
         );
 
-        wrapper.find('[data-test=close-menu-burger]').trigger('click');
+        await wrapper.find('[data-test=close-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
         expect(wrapper.emitted('on-hide-menu')).toBeTruthy();
@@ -54,14 +54,14 @@ describe('BurgerMenu', () => {
     });
 
     it("When BurgerMenuItem emits 'onClickItem', Then menu is closed", async () => {
-        const wrapper = shallowMount(BurgerMenu, {
+        const wrapper = await shallowMount(BurgerMenu, {
             global: {
                 mocks: {
                     $t,
                 },
             },
-        } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
-        wrapper.find('[data-test=open-menu-burger]').trigger('click');
+        });
+        await wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
         expect(
@@ -74,7 +74,11 @@ describe('BurgerMenu', () => {
             'menu-is-opened'
         );
 
-        wrapper.findComponent(BurgerMenuItem).vm.$emit('on-click-item');
+        (
+            wrapper.findComponent(BurgerMenuItem).vm as InstanceType<
+                typeof BurgerMenuItem
+            >
+        ).$emit('on-click-item');
         await wrapper.vm.$nextTick();
 
         expect(wrapper.emitted('on-hide-menu')).toBeTruthy();
@@ -98,7 +102,7 @@ describe('BurgerMenu', () => {
             },
         } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
 
-        wrapper.find('[data-test=open-menu-burger]').trigger('click');
+        await wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
 
         expect(
@@ -128,11 +132,11 @@ describe('BurgerMenu', () => {
             },
             attachTo: elem,
         } as MountingOptions<{}>); // eslint-disable-line @typescript-eslint/ban-types
-        wrapper.find('[data-test=open-menu-burger]').trigger('click');
+        await wrapper.find('[data-test=open-menu-burger]').trigger('click');
         await wrapper.vm.$nextTick();
         expect(wrapper.emitted('on-display-menu')).toBeTruthy();
 
-        wrapper.trigger('keydown', {
+        await wrapper.trigger('keydown', {
             key: 'Escape',
         });
         await wrapper.vm.$nextTick();

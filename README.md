@@ -17,7 +17,7 @@ And [Jest](https://jestjs.io/) to test some dark part of the code 🧐.
 ## Here there are existing commands
 ### Run the project
 ```
-npm install && npm run serve
+npm install && npm run dev
 ```
 
 ### Compiles and minifies for production
@@ -27,7 +27,7 @@ npm run build
 
 ### Run your unit tests
 ```
-npm run test:unit
+npm run test
 ```
 
 ### Lints and fixes files

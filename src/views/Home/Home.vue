@@ -9,8 +9,7 @@
                         ref="titleCompanyNameLink"
                         class="link-text-handle"
                         href="https://www.enalean.com/"
-                        rel="noopener noreferrer"
-                    >
+                        rel="noopener noreferrer">
                         {{ $t('home.presentation_title_company_name') }}
                     </a>
                 </div>
@@ -30,8 +29,7 @@
             <a
                 ref="resumeLink"
                 v-bind:href="resume_url"
-                class="link-text-handle link-text-handle-small"
-            >
+                class="link-text-handle link-text-handle-small">
                 {{ $t('home.presentation_cv_download') }}
             </a>
         </div>

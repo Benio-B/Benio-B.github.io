@@ -4,8 +4,7 @@
             v-bind:to="item.path"
             class="menu-item-link"
             v-on:click.capture="$emit('on-click-item')"
-            data-test="on-click-item"
-        >
+            data-test="on-click-item">
             <i v-bind:class="item.classes" class="menu-item-icon"></i>
             {{ item.name }}
         </router-link>

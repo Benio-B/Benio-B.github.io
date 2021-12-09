@@ -31,7 +31,7 @@ describe('BurgerMenuItem', () => {
                 plugins: [router],
             },
         });
-        wrapper.find('[data-test=on-click-item]').trigger('click');
+        await wrapper.find('[data-test=on-click-item]').trigger('click');
         await wrapper.vm.$nextTick();
         await flushPromises();
 

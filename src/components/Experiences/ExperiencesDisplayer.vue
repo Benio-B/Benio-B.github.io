@@ -3,8 +3,7 @@
         <experience-displayer
             v-for="experience in experiences"
             v-bind:key="experience.title"
-            v-bind:experience="experience"
-        />
+            v-bind:experience="experience" />
     </div>
 </template>
 

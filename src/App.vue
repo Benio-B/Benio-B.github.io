@@ -3,8 +3,7 @@
         <nav aria-label="Menu" v-show="display_menu">
             <burger-menu
                 v-on:on-display-menu="onDisplayMenu"
-                v-on:on-hide-menu="onHideMenu"
-            />
+                v-on:on-hide-menu="onHideMenu" />
         </nav>
         <div v-if="is_production" ref="clickToShowMenu" class="to-show-menu" />
         <main v-show="!menu_is_displaying"><router-view /></main>
@@ -70,5 +69,5 @@
 </script>
 
 <style lang="scss">
-    @use "./styles/_main.scss";
+    @use './styles/_main.scss';
 </style>

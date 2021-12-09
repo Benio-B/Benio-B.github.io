@@ -11,14 +11,12 @@
             v-bind:checked="
                 getLocalesToDisplay()[0].toLowerCase() ===
                 $i18n.locale.toLowerCase()
-            "
-        />
+            " />
         <label
             for="selector-language"
             class="selector-language-switch"
             v-bind:data-checked="getLocalesToDisplay()[0]"
-            v-bind:data-unchecked="getLocalesToDisplay()[1]"
-        />
+            v-bind:data-unchecked="getLocalesToDisplay()[1]" />
     </div>
 </template>
 

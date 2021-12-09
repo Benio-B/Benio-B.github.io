@@ -4,18 +4,15 @@
             <div
                 v-for="item in items_icons_link"
                 v-bind:key="item.link_label"
-                class="footer-title-icon-container"
-            >
+                class="footer-title-icon-container">
                 <a
                     v-bind:href="item.link"
                     v-bind:aria-label="item.link_label"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     <i
                         v-bind:class="item.classes"
-                        class="la-4x footer-title-icon"
-                    ></i>
+                        class="la-4x footer-title-icon"></i>
                 </a>
             </div>
         </div>

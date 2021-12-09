@@ -6,13 +6,11 @@
         v-bind:class="{
             'menu-is-opened': show_list_menu_items,
             'menu-is-closed': !show_list_menu_items,
-        }"
-    >
+        }">
         <div
             data-test="open-menu-burger"
             ref="menuBurgerIcon"
-            class="corner-menu-container-animated"
-        >
+            class="corner-menu-container-animated">
             <div class="corner-menu-icon">
                 <i class="menu-burger-icon las la-2x la-bars"></i>
             </div>
@@ -23,12 +21,11 @@
                     <li
                         v-for="item in items"
                         v-bind:key="item.id"
-                        v-bind:data-test="`item-list-${item.id}`"
-                    >
+                        v-bind:data-test="`item-list-${item.id}`">
                         <burger-menu-item
+                            data-test="burger-menu-item"
                             v-bind:item="item"
-                            v-on:on-click-item="onClickItem"
-                        />
+                            v-on:on-click-item="onClickItem" />
                     </li>
                 </ul>
             </div>
@@ -36,8 +33,7 @@
                 data-test="close-menu-burger"
                 class="menu-close-icon"
                 ref="closeMenuItemsIcon"
-                v-bind:aria-label="$t('close')"
-            >
+                v-bind:aria-label="$t('close')">
                 <i class="las la-2x la-times"></i>
             </div>
         </div>
