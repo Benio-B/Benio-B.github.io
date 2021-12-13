@@ -77,7 +77,7 @@
                     source_code_link_begin:
                         'experiences.enalean_1021_present.source_code_link_begin',
                     source_code_link:
-                        'https://github.com/Enalean/tuleap/commits?author=Benio-B',
+                        'https://github.com/Enalean/tuleap/commits?author=benjamin.bouillot@enalean.com',
                     source_code_link_end:
                         'experiences.enalean_1021_present.source_code_link_end',
                 },
