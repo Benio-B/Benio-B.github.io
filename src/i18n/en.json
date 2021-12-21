@@ -21,11 +21,27 @@
   },
   "experiences": {
     "title": "Professional Experiences",
-    "enalean_1021_present": {
+    "wizbii_1022_present": {
+      "enterprise": "Wizbii",
+      "localisation": "Grenoble, France",
+      "title": "Web Developer Back-End Engineer",
+      "date_end": "Now",
+      "summary": "Into R&D team, I develop some app's back-end with PHP and TypeScript",
+      "summary_technical_1": "Every day I work on the development of :",
+      "summary_example_1": "<strong>Rest API</strong> <i>(PHP - Symfony)</i>",
+      "summary_example_2": "<strong>Back-end</strong> of web application <i>(Node.Js + TypeScript)</i>",
+      "summary_example_3": "<strong>Front-end</strong> of web application <i>(Vue.Js + TypeScript)</i>",
+      "example_title": "Some missions:",
+      "example_1_title": "Create an <strong>automat</strong> to fill out forms automatically",
+      "example_1_explanation": "The data to fill are retrieved from an API, Le fonctionnement de l'automate, est basé sur des 'identifiers' et des 'actions': les 'Identifiers' permettent d'identifier la page du formulaire (via son URL, ou via des mots-clés présent sur la page), les actions permettent de remplir le formulaire (rentrer du texte, ou encore coché une case). Cet automate est basé sur Node.Js, et une application Electron est alors extraite.",
+      "example_1_explanation_2": "The automaton's functionning is based on 'Identifiers' and 'Actions': 'Identifiers' identifies the current page of the form (with check on URL, or keywords in the page) and 'Actions' fill the form (type texte, or tick a box). This application is developed Cet automate est basé sur Node.Js, et une application Electron est alors extraite.",
+      "languages": "<strong>Langages utilisés</strong> : PHP, Vue.Js, TypeScript/JavaScript, Behat, PHPUnit, Jest",
+      "tools": "<strong>Outils utilisés</strong> : Yarn, Docker, GitLab, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, Planning poker)"
+    },
+    "enalean_1021_1022": {
       "enterprise": "Enalean",
       "localisation": "Crolles, France",
       "title": "Web Developer Engineer",
-      "date_end": "Now",
       "summary": "Into Enalean R&D team, I take care of the development of the Front-End and Back-End parts of Tuleap.",
       "summary_technical": "On a daily basis, I work on:",
       "summary_example_1": "<strong>Integrations of mock-ups </strong><i>(Vue.Js + TypeScript)</i>",

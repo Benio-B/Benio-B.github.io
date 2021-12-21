@@ -21,11 +21,27 @@
   },
   "experiences": {
     "title": "Expériences professionnelles",
-    "enalean_1021_present": {
+    "wizbii_1022_present": {
+      "enterprise": "Wizbii",
+      "localisation": "Grenoble (38)",
+      "title": "CDI - Ingénieur Développeur Web Back-End",
+      "date_end": "Présent",
+      "summary": "Au sein de l'équipe R&D, j'ai pour but le développement back-end, aussi bien en PHP qu'en TypeScript",
+      "summary_technical_1": "Je travaille au quotidien sur le développement :",
+      "summary_example_1": "D'<strong>API Rest</strong> <i>(PHP - Symfony)</i>",
+      "summary_example_2": "Du <strong>back-end</strong> d'application web <i>(Node.Js + TypeScript)</i>",
+      "summary_example_3": "Du <strong>front-end</strong> d'applications web <i>(Vue.Js + TypeScript)</i>",
+      "example_title": "Au quotidien :",
+      "example_1_title": "Développement d'un <strong>automate</strong> permettant le remplissage de formulaire automatiquemet",
+      "example_1_explanation": "Cet automate fait appel à une API pour récuperer les informations à remplir dans les formulaires.",
+      "example_1_explanation_2": "Le fonctionnement de l'automate est basé sur des 'Identifiers' et des 'Actions': les 'Identifiers' permettent d'identifier la page du formulaire (via son URL, ou via des mots-clés présents sur la page), les 'Actions' permettent de remplir le formulaire (rentrer du texte, ou encore cocher une case). Cet automate est basé sur Node.Js, et une application Electron est alors extraite.",
+      "languages": "<strong>Langages utilisés</strong> : PHP, Vue.Js, TypeScript/JavaScript, Behat, PHPUnit, Jest",
+      "tools": "<strong>Outils utilisés</strong> : Yarn, Docker, GitLab, Jenkins, Webpack, Méthodologie Scrum (Revue de code, Pair Programming, Rétros, Planning poker)"
+    },
+    "enalean_1021_1022": {
       "enterprise": "Enalean",
       "localisation": "Crolles (38)",
       "title": "CDD - Ingénieur Développeur Web",
-      "date_end": "Présent",
       "summary": "Intégré dans l'équipe R&D d'Enalean, je m'occupe du développement des parties <strong>Front-End</strong> et <strong>Back-End</strong> de Tuleap.",
       "summary_technical": "Au quotidien, je travaille sur :",
       "summary_example_1": "<strong>L'integrations de maquettes</strong> <i>(Vue.Js + TypeScript)</i>",

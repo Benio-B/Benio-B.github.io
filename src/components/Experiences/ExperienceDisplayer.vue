@@ -38,7 +38,11 @@
                 <div class="experience-content">
                     <div v-html="experience.example_1_title" />
                     <div v-html="experience.example_1_explanation" />
+                    <div
+                        v-if="experience.example_1_explanation_2"
+                        v-html="experience.example_1_explanation_2" />
                     <i18n-t
+                        v-if="experience.example_1_link_begin"
                         tag="div"
                         v-bind:keypath="experience.example_1_link_begin">
                         <a
@@ -48,7 +52,7 @@
                     </i18n-t>
                 </div>
             </li>
-            <li>
+            <li v-if="experience.example_2_title">
                 <div class="experience-content">
                     <div v-html="experience.example_2_title" />
                     <div v-html="experience.example_2_explanation" />

@@ -47,12 +47,13 @@ export interface ExperienceComplete extends ExperienceDeveloperWithLink {
     example_title: string;
     example_1_title: string;
     example_1_explanation: string;
-    example_1_link_begin: string;
-    example_1_link: string;
-    example_1_link_end: string;
-    example_2_title: string;
-    example_2_explanation: string;
-    example_2_link_begin: string;
-    example_2_link: string;
-    example_2_link_end: string;
+    example_1_explanation_2?: string;
+    example_1_link_begin?: string;
+    example_1_link?: string;
+    example_1_link_end?: string;
+    example_2_title?: string;
+    example_2_explanation?: string;
+    example_2_link_begin?: string;
+    example_2_link?: string;
+    example_2_link_end?: string;
 }
