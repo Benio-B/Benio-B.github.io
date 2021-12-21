@@ -22,7 +22,7 @@
                     title: this.$t('experiences.wizbii_1022_present.title'),
                     date_begin: new Date(2020, 10),
                     date_end: this.$t(
-                        'experiences.enalean_1021_present.date_end'
+                        'experiences.wizbii_1022_present.date_end'
                     ),
                     localisation: this.$t(
                         'experiences.wizbii_1022_present.localisation'
